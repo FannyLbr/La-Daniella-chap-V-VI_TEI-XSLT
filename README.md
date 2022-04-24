@@ -1,12 +1,12 @@
-# Édition numérique du roman-feuilleton La Daniella (1857)
+# Édition numérique du roman-feuilleton *La Daniella* (1857)
 
-Ce projet a été réalisé par [Fanny Lebreton](https://github.com/FannyLbr) pour l'évaluation des cours d'XML TEI et d'XSLT du [Master 2 "Technologies numériques appliquées à l'histoire"](https://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire).
+Ce projet d'édition numérique a été réalisé par [Fanny Lebreton](https://github.com/FannyLbr) pour l'évaluation des cours d'**XML TEI** et d'**XSLT** du [Master 2 "Technologies numériques appliquées à l'histoire"](https://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire).
 
-## Extrait encodé
+## Extrait édité
 
-L'extrait édité correspond à l'épisode paru dans le numéro du **12 janvier 1857** du quotidien *La Presse*. 
-L'épisode contient **la fin du chapitre V et le chapitre VI** de l'oeuvre.
-La numérisation de l'extrait est disponible sur [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1).
+L'extrait édité correspond à l'épisode paru dans le numéro du **12 janvier 1857** du quotidien *La Presse*.   
+L'épisode contient **la fin du chapitre V et le chapitre VI** de l'oeuvre.  
+La numérisation de l'extrait est disponible sur [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1).  
 
 ## Organisation du dépôt
 
