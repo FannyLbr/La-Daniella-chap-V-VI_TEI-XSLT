@@ -35,7 +35,7 @@
          <!-- Informations sur la publication/distribution du document encodé -->
          <publicationStmt>
             <!--En admettant que cet encodage soit publié sur mon dépôt GitHub créé pour ce projet-->
-            <publisher ref="https://github.com/FannyLbr/Edition_scientifique_La_Daniella">Dépôt en ligne FannyLbr/Edition_scientifique_La_Daniella sur GitHub</publisher>
+            <publisher ref="https://github.com/FannyLbr/La-Daniella-chap-V-VI_TEI-XSLT">Dépôt en ligne FannyLbr/La-Daniella-chap-V-VI_TEI-XSLT sur GitHub</publisher>
             <pubPlace>
                   <location>
                      <country key="FR"/>

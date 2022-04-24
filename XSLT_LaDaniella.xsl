@@ -297,7 +297,7 @@
                         <p>Les choix initiaux d'encodage TEI appliqués sur le texte répondent à <b>divers objectifs</b>.</p>
                         <p><xsl:value-of select="//encodingDesc/p[2]"/></p>
                         <p><xsl:value-of select="//encodingDesc/p[3]"/></p>
-                        <p>Pour plus de renseignements sur les objectifs scientifiques de l'édition et les détails de l'encodage, nous vous conseillons de consulter l'ODD suivante : <b>'ODD_LaDaniella_FL'</b>.</p>
+                        <p>Pour plus de renseignements sur les objectifs scientifiques de l'édition et les détails de l'encodage, nous vous conseillons de consulter l'ODD suivante : <a href="https://github.com/FannyLbr/La-Daniella-chap-V-VI_TEI-XSLT/tree/main/Documentation">'ODD_LaDaniella_FL'</a>.</p>
                         <br/>
                         <hr/>
                         <br/>
