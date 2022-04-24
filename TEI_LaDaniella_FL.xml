@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="RNG_LaDaniella_FL.rng" type="application/xml"schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="RNG_LaDaniella_FL.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <!--Description bibliographique du fichier numérique ainsi que de sa source-->
+      <fileDesc>
+         
+         <!--Titre et nom de l'auteur-->   
+         <titleStmt>
+            <title>La Daniella</title>
+            <author ref="https://catalogue.bnf.fr/ark:/12148/cb119236010">
+               <persName xml:id="GS">
+                  <forename>George</forename>
+                  <surname>Sand</surname>
+               </persName>               
+            </author>
+         </titleStmt>
+         
+         <!--Informations sur l'édition du document encodé--> 
+         <editionStmt>
+            <edition>
+               Encodage réalisé dans le cadre de l'évaluation finale du cours de XML TEI du master TNAH. <date when-iso="2022-01">Janvier 2022.</date>
+            </edition>
+            <respStmt>
+               <resp>Transcription et encodage du texte.</resp>               
+               <persName xml:id="FL">
+                  <forename>Fanny</forename>
+                  <surname>Lebreton</surname>
+               </persName>               
+            </respStmt>
+         </editionStmt>
+         
+         <!-- Informations sur la publication/distribution du document encodé -->
+         <publicationStmt>
+            <!--En admettant que cet encodage soit publié sur mon dépôt GitHub créé pour ce projet-->
+            <publisher ref="https://github.com/FannyLbr/Edition_scientifique_La_Daniella">Dépôt en ligne FannyLbr/Edition_scientifique_La_Daniella sur GitHub</publisher>
+            <pubPlace>
+                  <location>
+                     <country key="FR"/>
+                     <settlement type="city">Paris</settlement>
+                  </location>
+            </pubPlace>
+            <date when-iso="2022-01">Janvier 2022</date>
+            <availability status="free">
+               <p>Librement disponible dans un cadre de recherche ou d'enseignement.</p>
+            </availability>
+         </publicationStmt>
+         
+         <!-- Informations concernant la source dont est issue l'encodage -->
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>La Daniella</title>
+                  <author ref="https://catalogue.bnf.fr/ark:/12148/cb119236010">
+                     <persName ref="#GS">
+                        <forename>George</forename>
+                        <surname>Sand</surname>
+                     </persName>
+                  </author>
+               </titleStmt>
+               
+               <publicationStmt>
+                  <publisher>La Presse</publisher>                  
+                  <pubPlace>
+                     <location>
+                        <country key="FR"/>
+                        <settlement type="city">Paris</settlement>
+                     </location>
+                  </pubPlace>
+                  <date when-iso="1857-01-12">12 janvier 1857</date>
+                  <authority>
+                     <persName xml:id="EG">
+                        <forename>Émile </forename>
+                        <nameLink>de </nameLink>
+                        <surname>Girardin </surname>
+                        <roleName type="directeur">Directeur de publication</roleName>
+                     </persName>
+                  </authority>
+                  <authority>
+                     <persName xml:id="GL">
+                        <forename>Georges </forename>
+                        <surname>Laguerre</surname>
+                        <roleName type="directeur">Directeur de publication</roleName>
+                     </persName>
+                  </authority>                  
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">
+                     Gallica Bibliothèque nationale de France
+                  </distributor>                  
+                  <availability>
+                     <licence target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica">
+                        Domaine public
+                     </licence>
+                  </availability>
+               </publicationStmt>
+               
+               <seriesStmt>
+                  <title>La Daniella</title>
+                  <biblScope unit="paper">La Presse</biblScope>
+                  <biblScope unit="serial_novel">La Daniella</biblScope>
+                  <biblScope unit="chapter">V (suite) et VI</biblScope>
+                  <biblScope unit="page" from="1" to="3">pp. 1-3</biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>
+         
+      </fileDesc>
+      
+      <!-- Informations concernant l'encodage du texte -->
+      <encodingDesc>
+         <projectDesc>
+            <p>Encodage réalisé pour l'évaluation du cours XML TEI du master 2 TNAH.</p>
+         </projectDesc>
+         <p>Cet encodage a été réalisé à partir de la numérisation disponible sur Gallica du roman-feuilleton La Daniella, écrit par George Sand en 1857, et publié en bas de page du quotidien La Presse. Il porte sur la suite du chapitre V et sur le chapitre VI.</p> 
+         <p>D'une part, ce projet d'encodage s'axe sur la reproduction fidèle de la source. La transcription du texte est imitative pour l'ensemble des aspects typographiques. La structure (en-tête, changement de pages, changement de colonnes, césure de fin de lignes), les graisses et les capitales sont respectées. Toutefois, les espaces blancs typographiques manquants sont restitués. L'orthographe et la ponctuation sont conservées, à l'exception de quelques coquilles d'impressions, ces dernières étant corrigées.</p> 
+         <p>D'autre part, cet encodage accorde une place centrale au référencement des personnages et des lieux.</p> 
+      </encodingDesc>
+     
+      <!--Aspects non bibliographiques du texte numérique-->
+      <profileDesc>
+         
+         <!--Informations concernant la création du texte-->
+         <creation>
+            <date when-iso="1857">1857</date>
+            <country key="FR">France</country>
+            <lang xml:lang="fr"/>
+         </creation>
+         
+         <!--Index des personnages de l'histoire-->
+         <particDesc>
+            
+            <!--Index des personnages principaux-->
+            <listPerson type="main_characters">
+               
+               <person xml:id="JV" sex="male">
+                  <persName>Jean Valreg</persName>
+                  <note>Jeune peintre. Il se trouve à bord du <placeName ref="#Castor">Castor</placeName> en direction de <placeName ref="#Rome">Rome</placeName> en <placeName ref="#Italie">Italie</placeName> afin d'étudier la peinture et afin de trouver l'inspiration. Il est le narrateur de cet extrait.</note>
+               </person>
+               
+               <person xml:id="Destinataire" sex="male">
+                  <persName>Destinataire anonyme</persName>
+                  <note><persName ref="#JV">Jean-Valreg</persName> adresse son récit à un personnage anonyme. Ce destinataire est un ami du défunt père de <persName ref="#JV">Jean Valreg</persName>.</note>
+               </person>
+               
+               <person xml:id="Brumieres" sex="male">
+                  <persName>Brumières</persName>
+                  <note>Peintre rencontré à <placeName ref="#Marseille">Marseille</placeName>. Il est le compagnon de voyage de <persName ref="#JV">Jean Valreg</persName> durant la traversée à bord du <placeName ref="#Castor">Castor</placeName>.</note>
+               </person>
+               
+               <person xml:id="Benvenuto" sex="male">
+                  <persName>Benvenuto</persName>
+                  <note>Harpiste et bohémien rencontré pour la première fois à <placeName ref="#Marseille">Marseille</placeName>. Il est présent à bord du <placeName ref="#Castor">Castor</placeName>.</note>
+               </person>
+               
+               <person xml:id="Medora" sex="female">
+                  <persName>
+                     <roleName>Miss </roleName> 
+                     <name>Médora</name>
+                  </persName>
+                  <note>Nièce de <persName ref="#Harryet">lady Harryet</persName>. Son père est le mari de la soeur de cette dernière. Dans cet extrait, ce personnage reste anonyme. Son identité intrigue <persName ref="#Brumieres">Brumieres</persName> et <persName ref="#JV">Jean Valreg</persName>. Son nom ne sera dévoilé que dans le chapitre suivant.</note>
+               </person>
+               
+               <person xml:id="Harryet" sex="female">
+                  <persName>
+                     <roleName>Lady </roleName>
+                     <name>Harryet</name>     
+                  </persName>
+                  <note>Épouse de <persName ref="#Lord_B">lord B***</persName> et tante de <persName ref="#Medora">miss Médora</persName>. Elle est à bord du <placeName ref="#Castor">Castor</placeName>.</note>
+               </person>               
+                             
+               <person xml:id="Lord_B" sex="male">
+                  <persName>
+                     <roleName>Lord </roleName>
+                     <name>B***</name>
+                  </persName>
+                  <note>Époux de <persName ref="#Harryet">lady Harryet</persName> et oncle de <persName ref="#Medora">miss Médora</persName>. Il est vu par <persName ref="#JV">Jean Valreg</persName> pour la première fois à Marseille. Il se trouve à bord du <placeName ref="#Castor">Castor</placeName> en compagnie de sa famille.</note>
+               </person>
+               
+               <person xml:id="Daniella" sex="female">
+                  <persName>Daniella</persName>
+                  <note>Suivante de <persName ref="#Medora">miss Médora</persName>. Elle se trouve à bord du <placeName ref="#Castor">Castor</placeName> au côté de sa maîtresse.</note>
+               </person>
+              
+            </listPerson>
+            
+            <!--Index des personnages secondaires et groupes de personnages secondaires-->
+            <listPerson type="secondaries_characters">              
+               
+               <personGrp xml:id="passagers" sex="mixte">
+                  <note>Les passagers représentent l'ensemble des personnages présents à bord du <placeName ref="#Castor">Castor</placeName>.</note>
+               </personGrp>
+               
+               <personGrp xml:id="equipage" sex="male">
+                  <note>L'équipage correspond aux marins en charge de la navigation à bord du <placeName ref="#Castor">Castor</placeName>.</note>
+               </personGrp>
+               
+               <personGrp xml:id="groupe_marins" sex="male">
+                  <note>Groupe de personnes constitué de 6 marins anonymes.</note>
+               </personGrp>
+               
+               <person xml:id="officier" sex="male">
+                  <persName>
+                     <roleName>Officier de marine</roleName>
+                  </persName>
+                  <note>Officier de marine anonyme. Il est vu en compagnie de <persName ref="#Lord_B">lord B***</persName> à <placeName ref="#Marseille">Marseille</placeName>, au cabaret de la <placeName ref="#reserve">Réserve</placeName>.</note>
+               </person>
+               
+            </listPerson>
+            
+         </particDesc>
+         
+         <!--Index des lieux-->
+         <settingDesc>
+            
+            <!--Index des lieux visités dans l'extrait-->            
+            <listPlace type="places_visited">
+               
+               <place xml:id="Castor" type="steamer">
+                  <placeName>Castor</placeName>
+                  <note>Bateau à vapeur. La majorité de l'extrait se déroule à bord de ce bateau. Il permet aux personnages de voyager jusqu'en <placeName ref="#Italie">Italie</placeName>.</note>
+               </place>
+               
+               <place xml:id="mediterranee" type="sea">
+                  <geogName><geogFeat>Mer </geogFeat>Méditerranée</geogName>
+                  <note>Mer intercontinentale, bordée par les côtes d'Europe du Sud, d'Afrique du Nord et d'Asie de l'Ouest. Le <placeName ref="#Castor">Castor</placeName> navigue sur cette mer.</note>
+               </place>
+               
+               <place xml:id="cotes_françaises" type="coast">
+                  <geogName><geogFeat>Côtes</geogFeat> françaises</geogName>
+                  <location>
+                     <country key="FR"/>
+                  </location>
+                  <note>Le <placeName ref="#Castor">Castor</placeName> longe les côtes françaises en partant de <placeName ref="#Marseille">Marseille</placeName>, avant d'atteindre les <placeName ref="#cotes_italiennes">côtes italiennes</placeName>.</note>
+               </place>
+               
+               <place xml:id="phare_Nice" type="lighthouse">
+                  <placeName>Phare de Nice</placeName>
+                  <location>
+                     <country key="FR"/>
+                     <region>Provence-Alpes-Côte d'Azur</region>
+                     <settlement type="city">Nice</settlement>
+                  </location>
+                  <note>Durant le voyage, le <placeName ref="#Castor">Castor</placeName> passe devant le phare de Nice.</note>
+               </place>
+               
+               <place xml:id="cotes_italiennes" type="coast">
+                  <geogName><geogFeat>Côtes</geogFeat> d'Italie</geogName>
+                  <location>
+                     <country key="IT"/>
+                  </location>
+                  <note>Le <placeName ref="#Castor">Castor</placeName> longe les côtes italiennes.</note>
+               </place>
+               
+               <place xml:id="Italie" type="country">
+                  <placeName>Italie</placeName>
+                  <location>
+                     <country key="IT"/>
+                  </location>
+                  <note>Pays d'arrivée du voyage. Le <placeName ref="#Castor">Castor</placeName> longe les côtes de ce pays.</note>
+               </place>
+               
+               <place xml:id="Genes" type="city">
+                  <placeName>Gênes</placeName>
+                  <location>
+                     <country key="IT"/>
+                     <region>Ligurie</region>
+                     <settlement type="city"/>
+                  </location>
+                  <note>Première escale du voyage. <persName ref="#JV">Jean Valreg</persName> quitte le steamer pour pouvoir déambuler dans les rues de cette ville. Il donne, dans cet extrait, de nombreuses descriptions de celle-ci.</note>
+               </place>
+               
+               <place xml:id="port_Genes" type="port">
+                  <placeName>Port de Gênes</placeName>
+                  <location>
+                     <country key="IT"/>
+                     <region>Ligurie</region>
+                     <settlement type="city">Gênes</settlement>
+                  </location>
+                  <note>Lieu où débarque les voyageurs du <placeName ref="#Castor">Castor</placeName> dans le but de visiter la ville de <placeName ref="#Genes">Gênes</placeName>.</note>
+               </place>               
+               
+               <place xml:id="palais_Doria" type="palace">
+                  <placeName>Palais de Doria</placeName>
+                  <location>
+                     <country key="IT"/>
+                     <region>Ligurie</region>
+                     <settlement type="city">Gênes</settlement>
+                  </location>
+               </place>
+               
+               <place xml:id="concordia" type="bar">
+                  <placeName>Concordia</placeName>
+                  <location>
+                     <country key="IT"/>
+                     <region>Ligurie</region>
+                     <settlement type="city">Gênes</settlement>                     
+                  </location>
+                  <note>Café situé à <placeName ref="#Genes">Gênes</placeName>. <persName ref="#JV">Jean Valreg</persName> s'y arrête pour prendre un café lorsqu'il visite la ville.</note>
+               </place>
+        
+            </listPlace>
+            
+            <!--Index des lieux mentionnés mais non visités dans l'extrait-->
+            <listPlace type="places_mentioned">
+               
+               <place xml:id="France" type="country">
+                  <placeName>France</placeName>
+                  <location>
+                     <country key="FR"/>
+                  </location>
+                  <note>Pays de départ du <placeName ref="#Castor">Castor</placeName>. Ce dernier longe les côtes de ce pays avant d'atteindre les <placeName ref="#cotes_italiennes">côtes italiennes</placeName></note>
+               </place>
+               
+               <place xml:id="Marseille" type="city">
+                  <placeName>Marseille</placeName>
+                  <location>
+                     <country key="FR"/>
+                     <region>Provence-Alpes-Côte d'Azur</region>
+                     <settlement type="city"/>
+                  </location>
+                  <note>Ville de départ du <placeName ref="#Castor">Castor</placeName>.</note>
+               </place>
+               
+               <place xml:id="reserve" type="inn">
+                  <placeName>Réserve</placeName>
+                  <location>
+                     <country key="FR"/>
+                     <region>Provence-Alpes-Côte d'Azur</region>
+                     <settlement type="city">Marseille</settlement>
+                  </location>
+                  <note>Cabaret situé à <placeName ref="#reserve">Marseille</placeName>. Dans le chapitre précédent, <persName ref="#JV">Jean Valreg</persName> s'y rend, et y voit <persName ref="#Benvenuto">Benvenuto</persName> et <persName ref="#Lord_B">lord B***</persName>.</note>
+               </place>
+               
+               <place xml:id="Civita_Vecchia" type="city">
+                  <placeName>Civita-Vecchia</placeName>
+                  <location>
+                     <country key="IT"/>
+                     <region>Latium</region>
+                     <settlement type="city"/>                     
+                  </location>
+                  <note>Ville d'arrivée du <placeName ref="#Castor">Castor</placeName>. Dans la suite de l'extrait, les personnages principaux quittent le steamer et prennent ensuite la direction de <placeName ref="#Rome">Rome</placeName>.</note>
+               </place>
+                             
+               <place xml:id="Rome" type="city">
+                  <placeName>Rome</placeName>
+                  <location>
+                     <country key="IT"/>
+                     <region>Latium</region>
+                     <settlement type="city"/>
+                  </location>
+                  <note>Destination finale de l'ensemble des personnages principaux.</note>
+               </place>
+               
+               <place xml:id="sept_collines" type="hills">
+                  <geogName>Sept-<geogFeat>Collines</geogFeat></geogName>
+                  <location>
+                     <country key="IT"/>
+                     <region>Latium</region>
+                     <settlement type="city">Rome</settlement>
+                  </location>
+                  <note>Principales collines sur lesquelles s'étend la ville de <placeName ref="#Rome">Rome</placeName>. <persName ref="#Benvenuto">Benvenuto</persName> veut s'y rendre.</note>
+               </place>
+               
+            </listPlace>
+            
+         </settingDesc>
+         
+      </profileDesc>
+      
+   </teiHeader>
+   
+   <!--Informations secondaires et relations-->
+   <standOff>
+      
+      <!--Liste de personnages cités ne faisant pas partie de l'histoire-->
+      <listPerson type="other_characters_mentioned">
+         
+         <person xml:id="Desdemona" sex="female">
+            <persName>Desdemona</persName>
+            <note>Personnage issu de la pièce "Othello ou le Maure de Venise" de W. Shakespeare.</note>
+         </person>
+         
+         <person xml:id="Cleopatre" sex="female">
+            <persName>Cléopâtre</persName>
+            <note>Personnage issu de la pièce de théâtre "Antoine et Cléopâtre" de W. Shakespeare.</note>
+         </person> 
+         
+         <person xml:id="Othello" sex="male">
+            <persName>Othello</persName>
+            <note>Personnage issu de la pièce "Othello ou le Maure de Venise" de W. Shakespeare.</note>
+         </person> 
+         
+         <person xml:id="Antoine" sex="male">
+            <persName>Antoine</persName>
+            <note>Personnage issu de la pièce de théâtre "Antoine et Cléopâtre" de W. Shakespeare.</note>
+         </person> 
+         
+      </listPerson>
+      
+      <!--Liste d'artistes célèbres mentionnés-->
+      <listPerson type="painters">
+         
+         <person xml:id="Van_Dick" sex="male">
+            <persName>Van Dick</persName>
+            <note>Peintre flamand du XVIIe siècle.</note>
+         </person> 
+         
+         <person xml:id="Veronese" sex="male">
+            <persName>Véronèse</persName>
+            <note>Peintre vénitien du XVIe siècle.</note>
+         </person> 
+         
+      </listPerson>
+      
+      <!--Index des lieux mentionnés mais non visités dans l'ensemble de l'histoire-->
+      <listPlace type="unvisited_places">
+         
+         <place xml:id="Acheron" type="river">
+            <placeName>Achéron</placeName>
+            <location>
+               <country key="GR"/>                     
+               <region>Épire</region>
+            </location> 
+            <note>Fleuve côtier d'Épire en Grèce.</note>
+         </place>
+         
+         <place xml:id="territoire_sarde" type="area">
+            <placeName>territoire sarde</placeName>
+            <location>
+               <country key="IT"/>                     
+               <region>Sardaigne</region>
+               <geogName><geogFeat>île</geogFeat>de la Sardaigne</geogName>
+            </location>                 
+         </place>
+         
+      </listPlace>
+      
+      <!--Listes des différentes relations entre les personnages principaux-->
+      <listRelation type="family">
+         <relation name="married" mutual="#Harryet #Lord_B"/>
+         <relation name="aunt" active="#Harryet" passive="#Medora"/>
+         <relation name="uncle" active="#Lord_B" passive="#Medora"/>
+      </listRelation>
+      
+      <listRelation type="work">
+         <relation name="employer" active="#Daniella" passive="#Medora"/>
+      </listRelation>
+      
+      <listRelation type="friendship">
+         <relation name="friends" mutual="#JV #Brumieres #Benvenuto"/>
+      </listRelation>
+      
+      <listRelation type="acquaintance">
+         <relation name="acquaintance" mutual="#JV #Destinataire"/>
+      </listRelation>
+      
+   </standOff>
+   
+   <!--Corps du texte-->
+   <text>
+      <body>
+         <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1.item"/>
+         <cb n="1"/>
+         
+         <div type="paper" rend="bottom">
+            <head rend="center capitals bold">Feuilleton de la presse</head>
+
+            <dateline rend="center capitals">
+               <time>Du lundi soir</time>
+               <date when-iso="1857-01-12"> 12 janvier 1857.</date>
+            </dateline>
+
+            <div type="serial_novel">
+               <head rend="center capitals bold">La Daniella.</head>
+
+
+               <div type="chapter" n="5">
+                  <head rend="center">V (Suite).</head>
+
+                  <dateline rend="right">
+                     <date when-iso="--03-15" rend="right">15 mars.</date>
+                  </dateline>
+                  
+                  <p><lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Me</rs> voilà enfin sur le <placeName ref="#Castor" rend="italic">Castor</placeName>, en vue des
+                     <lb/><placeName ref="#cotes_italiennes">côtes d'Italie</placeName>. La journée a été claire et fraîche à bord. 
+                     <lb/><rs type="place_desc" subtype="physical" ref="#cotes_italiennes">Les rivages escarpés sont toujours magnifiques.</rs> 
+                     <lb/>Ce soir, le vent est tombé, la brume a envahi 
+                     <lb/>les horizons. Trois goëlands, qui <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #passagers #equipage">nous</rs> suivaient au 
+                     <lb/>coucher du soleil, et qui s'obstinaient à vouloir 
+                     <lb/>percher sur la <rs type="place_desc" subtype="physical" ref="#Castor">banderolle de fumée noire que
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #passagers #equipage">notre</rs> <rs type="place" ref="#Castor">vapeur</rs> lance à intervalles égaux</rs>, se sont 
+                     <lb/>enfin décidés à <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #passagers #equipage">nous</rs> quitter après des cris d'a- 
+                     <lb/>dieu d'une douceur étrange. <rs type="place_desc" subtype="physical" ref="#cotes_françaises">Le <placeName ref="#phare_Nice">phare de Nice</placeName>
+                     <lb/>perce le brouillard</rs>. Presque personne n'est mala- 
+                     <lb/>de. Pour <rs type="person_grammar" subtype="tonic_pronoun" ref="#JV">moi</rs>, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> n'aurai jamais le plus petit mal- 
+                     <lb/>aise en mer, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> sens cela. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">J'</rs>ai un coin pour <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> 
+                     <lb/>écrire, et <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> vais <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> raconter les incidents de la
+                     <lb/>journée.</p>
+
+                  <p><lb/>D'abord, <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> <rs type="person" ref="#Brumieres">camarade le peintre</rs>, qui <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> 
+                     <lb/>prend pour un <rs type="person_desc" subtype="personality" ref="#JV">petit amateur paresseux</rs>, et par 
+                     <lb/>qui <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> trouve assez commode d'être piloté et pro-
+                     <lb/>tégé, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>a tenu compagnie tout le temps, et ne 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>a pas fait grace d'un terme du métier, en <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> 
+                     <lb/>montrant <rs type="place_desc" subtype="physical" ref="#cotes_françaises">le ciel, la vague et les masses de ro-
+                     <lb/>cher</rs> au milieu desquels le <rs type="place" ref="#Castor">steamer</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #passagers #equipage">nous</rs> pro-
+                     <cb n="2"/><lb/>mène. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Il</rs> était tout étonné que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> n'eusse aucune 
+                     <lb/>notion de l'argot des peintres, qu'il <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs> plaît d'ap- 
+                     <lb/>peler la langue de l'art. Car il faut <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> avouer 
+                     <lb/>que, pour passer le temps, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je me</rs> suis amusé à 
+                     <lb/>feindre la plus complète ignorance des us, coutu- 
+                     <lb/>mes et locutions de l'atelier. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Il</rs> était bien près de 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> mépriser. Cependant la docilité que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>ai mise 
+                     <lb/>à <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">l'</rs>écouter <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">l'</rs>a un peu mieux disposé en <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">ma</rs> faveur. 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Il</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>a montré ensuite ses croquis de <placeName ref="#Marseille">Marseille</placeName>. 
+                     <lb/>C'est habilement fait ; il y a ce qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> appelle <emph rend="italic">de</emph>
+                     <lb/><emph rend="italic">la patte</emph>, une <emph rend="italic">fière patte</emph> ; mais cela n'est pas plus 
+                     <lb/>l'endroit dont <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">l'</rs>ai vu charmé, que tout autre 
+                     <lb/>endroit du monde. Les formes y sont, le senti- 
+                     <lb/>ment n'y est pas. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">J'</rs>ai essayé de le <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs> faire en- 
+                     <lb/>tendre. A <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> tour, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs> parlais une langue qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> 
+                     <lb/>ne comprenait point et qui n'avait pas, comme 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">son</rs> argot d'atelier, le mérite d'être amusante.</p>
+
+                  <p><lb/>C'est, du reste, <rs type="person_desc" subtype="physical_personality" ref="#Brumieres">un aimable garçon que ce 
+                     <lb/><persName ref="#Brumieres">Brumières</persName>. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Il</rs> a une trentaine d'années, quelques pe- 
+                     <lb/>tites ressources qui <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs> permettent de refaire le 
+                     <lb/>voyage de <placeName ref="#Rome">Rome</placeName>, bien que <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">ses</rs> études soient ce 
+                     <lb/>qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> appelle terminées ; une jolie figure, de la 
+                     <lb/>gaîté qui ressemble à de l'esprit, et un très agréa- 
+                     <lb/>ble caractère</rs>.</p>
+
+                  <p><lb/>Comme <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> causions de l'itinéraire de <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">notre</rs> 
+                     <lb/>voyage, un <rs type="person" ref="#Benvenuto"><emph rend="italic">monsieur des troisiemes</emph></rs>, c'est à dire <rs type="person_desc" subtype="personality" ref="#Benvenuto">un 
+                     <lb/>prolétaire voyageant au dernier prix, et qui avait 
+                     <lb/>une attitude dantesque</rs>, comme s'il se fût agi de 
+                     <lb/>naviguer sur l'<placeName ref="#Acheron">Achéron</placeName>, se mêla de <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">notre</rs> conver-
+                     <lb/>sation et <said who="#Benvenuto" direct="false" toWhom="#JV #Brumieres"><rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> conseilla de ne pas perdre <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">notre</rs> 
+                     <lb/>temps à <placeName ref="#Genes">Gênes</placeName></said>, <rs type="place" ref="#Genes">ville</rs> pour laquelle <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs> affichait un 
+                     <lb/>profond mépris.</p>
+
+                  <p><lb/>La figure de <rs type="person_grammar" subtype="demonstrative_pronoun" ref="#Benvenuto">cet</rs> <rs type="person" ref="#Benvenuto">homme</rs> ne <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>était pas incon-
+                     <lb/>nue. <said who="#JV" direct="true" toWhom="#Benvenuto">— Où donc vous ai-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> vu ? <seg type="narrative_interpolated_clause"><rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">lui</rs> demandai-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs></seg>.</said> 
+                     <lb/><said who="#Benvenuto" direct="true" toWhom="#JV">— Il y a deux jours, <rs type="person" ref="#JV">excellence</rs>, <seg type="narrative_interpolated_clause">répondit-<rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs>
+                     <lb/>en assez bon français</seg>. <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">Je</rs> jouais de la harpe 
+                     <lb/>à la <placeName ref="#reserve" rend="italic">Réserve</placeName>…</said> <said who="#JV" direct="true" toWhom="#Benvenuto">— Ah ! c'est <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">vous</rs> ? Eh bien, où 
+                     <lb/>est-elle donc, votre harpe ?</said> <said who="#Benvenuto" direct="true" toWhom="#JV">— Elle n'est plus ! 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#groupe_marins">Ils</rs> se sont pris de vin, colletés, battus. Dans 
+                     <lb/>la bagarre, <rs type="person_grammar" subtype="possessive_pronoun" ref="#Benvenuto">ma</rs> pauvre harpe a eu le ventre 
+                     <lb/>écrasé sous une table. Et Dieu sait qu'elle était lour-
+                     <lb/>de : il y avait <rs type="person" ref="#groupe_marins">six hommes</rs> dessus ! Quand <rs type="person_grammar" subtype="personal_pronoun" ref="#groupe_marins">ils</rs> ont 
+                     <lb/>été dessous, il n'y a pas eu moyen de <rs type="person_grammar" subtype="personal_pronoun" ref="#groupe_marins">leur</rs> faire 
+                     <lb/>entendre qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#groupe_marins">ils</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">m'</rs>avaient détruit mon gagne-pain. 
+                     <cb n="3"/><lb/>Ce n'est pas qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#groupe_marins">ils</rs> soient méchants ; non, certai-
+                     <lb/>nement : à jeun, le marin est une bonne pâte
+                     <lb/>d'homme. Mais le rhum, <distinct xml:lang="Fr" type="dialect" rend="italic">mossiou</distinct> ! Que voulez-
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> faire contre cela ? <rs type="person_grammar" subtype="personal_pronoun" ref="#groupe_marins">Ils</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">m'</rs>auraient tué ! <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">J'</rs>ai 
+                     <lb/>laissé là ma harpe, et <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">je</rs> vais tâcher de faire quel-
+                     <lb/>que autre métier. Aussi bien, <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">j'</rs>en avais assez de 
+                     <lb/>la musique et de la <placeName ref="#France">France</placeName>. <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">Je</rs> suis un <rs type="person" ref="#Brumieres">Romain</rs>, 
+                     <lb/><rs type="person_grammar" subtype="tonic_pronoun" ref="#Benvenuto">moi</rs>, <rs type="person" ref="#JV">excellence</rs>. »</said> Et, là-dessus, <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs> se redressa de 
+                     <lb/><rs type="person_desc" subtype="physical" ref="#Benvenuto">la hauteur de ses quatre pieds et demi, taille 
+                     <lb/>d'enfant qui ne l'empêche pas de posséder une 
+                     <lb/>barbe de sapeur et une chevelure à l'avenant</rs>. <said who="#Benvenuto" direct="true" toWhom="#JV">« Je 
+                     <lb/>suis un <rs type="person" ref="#Benvenuto">Romain</rs>, <seg type="narrative_interpolated_clause">poursuivit-<rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs> avec emphase</seg>, et 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">j'</rs>ai besoin de <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">me</rs> retrouver sur les <placeName ref="#sept_collines">Sept-Collines</placeName></said>.</p>
+
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#Benvenuto">— C'est bien vu, <seg type="narrative_interpolated_clause"><rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">lui</rs> dit <persName ref="#Brumieres">Brumières</persName></seg>, les 
+                     <lb/><placeName ref="#sept_collines">Sept-Collines</placeName> doivent avoir besoin de <rs type="person_grammar" subtype="tonic_pronoun" ref="#Benvenuto">toi</rs> ! Mais quel métier 
+                     <lb/>y faisais-<rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">tu</rs>, là, et à quoi vas-<rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">tu</rs> consacrer <rs type="person_grammar" subtype="possessive_pronoun" ref="#Benvenuto">tes</rs> pré-
+                     <lb/>cieux jours ?</said></p>
+                  
+                  <p><lb/><said who="#Benvenuto" direct="true" toWhom="#Brumieres">— <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">Je</rs> ne faisais rien ! <seg type="narrative_interpolated_clause">répondit-<rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs></seg>, et <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">je</rs> compte 
+                     <lb/>ne rien faire, aussitôt que <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">j'</rs>aurai amassé quelques 
+                     <lb/>sous pour passer l'année.</said></p> 
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#Benvenuto">— <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">Tu</rs> n'as donc rien épargné dans <rs type="person_grammar" subtype="possessive_pronoun" ref="#Benvenuto">ta</rs> vie er-
+                     <lb/>rante ?</said></p>
+                  
+                  <p><lb/><said who="#Benvenuto" direct="true" toWhom="#Brumieres">— Pas même de quoi payer mon passage sur 
+                     <lb/>le <placeName ref="#Castor" rend="italic">Castor</placeName> ; mais <rs type="person_grammar" subtype="personal_pronoun" ref="#equipage"><emph rend="italic">ils</emph></rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">me</rs> connaissent et ne <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">me</rs> par-
+                     <lb/>leront pas d'argent avant <placeName ref="Civita_Vecchia">Civita-Vecchia</placeName>.</said></p>
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#Benvenuto">— Mais alors…</said></p>
+                  
+                  <p><lb/><said who="#Benvenuto" direct="true" toWhom="#Brumieres #JV">— Alors, à la garde de Dieu ! <seg type="narrative_interpolated_clause">répondit-<rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs> avec 
+                     <lb/>philosophie</seg>. Peut-être <rs type="person" ref="#JV #Brumieres">vos excellences</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">me</rs> don-
+                     <lb/>neront-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">elles</rs> un petit secours…</said></p> 
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#Benvenuto">— Ah ! <rs type="person_grammar" subtype="personal_pronoun">tu</rs> mendies ? <seg type="narrative_interpolated_clause">s'écria <persName ref="#Brumieres">Brumières</persName></seg> ; <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">tu</rs> es 
+                     <lb/>bien <rs type="person" ref="#Brumieres">Romain</rs>, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> n'en pouvons plus douter. 
+                     <lb/>Tiens, voilà <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">mon</rs> aumône. Fais le tour de <rs type="place" ref="#Castor">l'éta-
+                     <lb/>blissement</rs>.</said></p>
+                  
+                  <p><lb/><said who="#Benvenuto" direct="true" toWhom="#Brumieres">— Rien ne presse ! peu à peu ! <seg type="narrative_interpolated_clause">reprit <rs type="person" ref="#Benvenuto">le Bohé-
+                     <lb/>mien</rs></seg> en <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> tendant une main, tandis que, de 
+                     <lb/>l'autre, <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs> mettait les cinquante centimes de
+                     <lb/><persName ref="#Brumieres">Brumières</persName> dans <rs type="person_grammar" subtype="possessive_pronoun" ref="#Benvenuto">sa</rs> poche.</said></p>
+                  
+                  <p><lb/><said who="#JV" direct="true" toWhom="#Brumieres">— Si c'est là le type romain… <seg type="narrative_interpolated_clause">dis-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> à <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> 
+                     <lb/><rs type="person" ref="#Brumieres">compagnon</rs></seg>, quand le <rs type="person" ref="#Benvenuto">harpiste</rs> se fut éloigné.</said></p> 
+
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">— C'est <rs type="person_desc" subtype="physical_personality" ref="#Benvenuto">le type abâtardi ; et pourtant <rs type="person_grammar" subtype="demonstrative_pronoun" ref="#JV">cet</rs> <rs type="person" ref="#Benvenuto">hom-
+                     <lb/>me dégénéré</rs> est encore très beau</rs> ; que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> en
+                     <lb/>semble ?</said></p> 
+
+                  <p><lb/>Il ne <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> semblait pas du tout. <rs type="person_desc" subtype="physical" ref="#Benvenuto">Cette énorme 
+                     <lb/>barbe grossissant encore le volume d'une tête
+                     <cb n="4"/><lb/>trop grosse pour le corps grêle et court ; ce nez 
+                     <lb/>de polichinelle surmonté de gros sourcils ombra-
+                     <lb/>geant des yeux trop fendus ; cette bouche de sot 
+                     <lb/>emportant violemment le menton dans tous ses 
+                     <lb/>mouvements, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> faisaient l'effet d'une caricature 
+                     <lb/>de médaille antique</rs> ; mais <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> ami <persName ref="#Brumieres">Brumières</persName> 
+                     <lb/>paraît habitué à ces laideurs-là, et <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>ai remarqué 
+                     <lb/>que toutes les figures qui <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> semblaient grotes-
+                     <lb/>ques avaient de l'attrait pour <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs>, pourvu qu'el-
+                     <lb/>les eussent ce qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> appelle de la race.</p>
+
+                  <p><lb/>Au milieu du <rs type="person" ref="#equipage">nombreux personnel</rs> qui encom-
+                     <lb/>bre le <placeName ref="#Castor" rend="italic">Castor</placeName>, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> nous sommes pourtant trou-
+                     <lb/>vés d'accord sur la beauté d'une <rs type="person" ref="#Medora">femme</rs>. C'est un 
+                     <lb/><rs type="person" ref="#Medora">personnage assez mystérieux</rs> qui a, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> crois, 
+                     <lb/>troublé la cervelle de <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">mon</rs> <rs type="person" ref="#Brumieres">camarade</rs>. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Il</rs> veut que ce 
+                     <lb/>soit une <rs type="person" ref="#Medora">princesse grecque</rs> ; soit. D'abord, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> l'a-
+                     <lb/>vions prise pour une <rs type="person" ref="#Medora">femme de chambre élégante</rs>, 
+                     <lb/>parce qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle</rs> était venue, au milieu du déjeûner 
+                     <lb/>chercher quelques mets qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle</rs> a emportés <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle</rs>-
+                     <lb/>même dans sa <rs type="place" ref="#Castor">chambre</rs> ; mais <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">l'</rs>avons vue 
+                     <lb/>ensuite assise sur le <rs type="place" ref="#Castor">pont</rs>, donnant des ordres en 
+                     <lb/>italien à une vraie <rs type="person" ref="#Daniella">suivante</rs>. Puis, une <rs type="person" ref="#Harryet">dame âgée</rs> 
+                     <lb/>est apparue à ses côtés, celle sans doute qui était 
+                     <lb/>malade, une <rs type="person" ref="#Harryet">tante</rs> ou une <rs type="person" ref="#Harryet">mère</rs>, et <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora #Daniella #Harryet">elles</rs> ont parlé 
+                     <lb/>anglais comme si <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora #Daniella #Harryet">elles</rs> n'eussent fait autre chose 
+                     <lb/>de leur vie.</p> 
+
+                  <p><lb/><persName ref="#Brumieres">Brumières</persName> ne persiste pas moins à croire Grec-
+                     <lb/>que la <rs type="person" ref="#Medora">belle personne</rs> qui captive <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">son</rs> attention. 
+                     <lb/>C'est, en effet,<rs type="person_desc" subtype="physical" ref="#Medora"> un type oriental : les cils sont 
+                     <lb/>d'une longueur et d'une finesse inouïes ; les yeux, 
+                     <lb/>longs et doux, ont une forme tout à fait inusitée 
+                     <lb/>chez nous ; le front est élevé, avec des cheveux 
+                     <lb/>plantés bas ; la taille est d'une élégance et d'un 
+                     <lb/>mouvement magnifiques ; enfin, c'est, à coup sûr, 
+                     <lb/>une des plus belles femmes, sinon la plus belle 
+                     <lb/>femme que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>aie jamais vue</rs>.</p>                  
+
+                  <p><lb/>— <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> reprends <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> bavardage après deux heu-
+                     <lb/>res d'interruption. C'est un <rs type="person" ref="#Brumieres">singulier être</rs>, à <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> 
+                     <lb/>sens, que ce <persName ref="#Brumieres">Brumières</persName>. <said who="#Brumieres" direct="false" toWhom="#JV"><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Il</rs> se prétend <rs type="person_desc" subtype="personality" ref="#Brumieres">positive-
+                     <lb/>ment amoureux</rs></said>, et ce que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> racontais de 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs> en plaisanterie, il faut peut-être le prendre au 
+                     <lb/>sérieux maintenant. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Il</rs> a causé avec <emph rend="italic"><rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">sa</rs> <rs type="person" ref="#Medora">princesse</rs></emph>, 
+                     <lb/>c'est ainsi qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> persiste à <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">l'</rs>appeler. <said who="#Brumieres" direct="false" toWhom="#JV"><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Il</rs> prétend 
+                     <lb/>qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle</rs> est <rs type="person_desc" subtype="personality" ref="#Medora">romanesque, étrange, délicieuse</rs></said>. <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">Elle</rs> 
+                     <cb n="5"/><lb/>était revenue seule sur le <rs type="place" ref="#Castor">pont</rs> et s'est laissé par-
+                     <lb/>ler des étoiles (que l'on n'aperçoit pas), de <rs type="place_desc" subtype="physical" ref="#mediterranee">la 
+                     <lb/>phosphorescence de la <rs type="place" ref="#mediterranee">mer</rs>, qui est, en effet, su-
+                        <lb/>perbe en ce moment-ci</rs> ; des merveilles de <placeName ref="#Rome">Rome</placeName>,
+                     <lb/>qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle</rs> connaît mieux que <persName ref="#Brumieres">Brumières</persName> lui-
+                     <lb/>même, ce qui, selon <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs>, n'est pas peu dire : 
+                     <lb/>enfin, <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle</rs> va à Rome sans s'arrêter, et <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> cer-
+                     <lb/>veau brûlé, qui devait s'arrêter à <placeName ref="#Genes">Gênes</placeName> ne veut 
+                     <lb/>plus s'arrêter nulle part. Au moment où <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> deve-
+                     <lb/>nait trop curieux, la <rs type="person" ref="#Medora">princesse</rs> a eu froid, et s'en 
+                     <lb/>est allée rejoindre <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">sa</rs> <rs type="person" ref="#Harryet">vieille parente</rs> ou <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">sa</rs> <rs type="person" ref="#Harryet">maî-
+                     <lb/>tresse</rs>, car rien ne prouve encore qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Harryet">elle</rs> ne soit 
+                     <lb/>pas <rs type="person" ref="#Medora">lectrice</rs> ou <rs type="person" ref="#Medora">dame de compagnie</rs>.</p>
+
+                  <p><lb/>L'enthousiasme subit du <rs type="person" ref="#Brumieres">jeune peintre</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> 
+                     <lb/>a entraînés à parier de l'amour, et <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">ses</rs> théo-
+                     <lb/>ries <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> semblent violentes à digérer. Comme 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> montrais quelque doute à l'endroit de la 
+                     <lb/>qualité de la <rs type="person" ref="#Medora">dame</rs>, <said who="#Brumieres" direct="false" toWhom="#JV"><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> s'est presque fâché, 
+                     <lb/>assurant qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> connaissait le monde, les femmes 
+                     <lb/>particulièrement, et que <rs type="person_grammar" subtype="demonstrative_pronoun" ref="#Medora">celle-ci</rs> appartenait à la 
+                     <lb/>plus haute aristocratie</said>. <said who="#JV" direct="true" toWhom="#Brumieres">— Soit, <seg type="narrative_interpolated_clause"><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs> disais-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs></seg>, <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> 
+                     <lb/>vous y connaissez certainement mieux que <rs type="person_grammar" subtype="tonic_pronoun" ref="#JV">moi</rs> ; 
+                     <lb/>mais quand, par miracle, <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> vous tromperiez, 
+                     <lb/>qu'importe que <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">votre</rs> <rs type="person" ref="#Medora">héroïne</rs> soit riche ou pau-
+                     <lb/>vre, noble ou bourgeoise ? Ce n'est pas de <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">son</rs> 
+                     <lb/>rang et de <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">sa</rs> fortune que <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> seriez amoureux, 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>imagine ; ce serait d'<rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle-même</rs>. Le peintre ne 
+                     <lb/>demande pas au cadre ce qu'il doit penser de la 
+                     <lb/>peinture.</said></p> 
+
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">— Eh ! Eh ! <seg type="narrative_interpolated_clause"><rs type="person_grammar" subtype="personal_pronoun">m'</rs>a-t-<rs type="person_grammar" subtype="personal_pronoun">il</rs> répondu</seg>, le cadre, quand il 
+                     <lb/>est beau, n'est pas une vaine présomption pour 
+                     <lb/>la valeur de l'image. Bien certainement, on peut 
+                     <lb/>aimer une femme sans argent et sans aïeux ; cela 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">m'</rs>est arrivé aussi bien qu'à <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> probablement, 
+                     <lb/>aussi bien qu'à tout le monde ; mais quand une 
+                     <lb/>femme intelligente et belle joint à ses charmes 
+                     <lb/>l'attrait des biens et des grandeurs, elle est com-
+                     <lb/>plète parce qu'elle vit dans son milieu naturel, 
+                     <lb/>dans une atmosphère de poésie faite pour elle.</said></p> 
+
+                  <p><lb/><said who="#JV" direct="true" toWhom="#Brumieres">— <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> accorde cela pour la vue. Il devait ê-
+                     <lb/>tre beau de regarder passer <persName ref="#Desdemona">Desdemona</persName> traînant 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#Desdemona">sa</rs> robe brodée d'or et de perles sur les tapis d'O-
+                     <lb/>rient du palais ducal. <persName ref="#Cleopatre">Cléopâtre</persName>, couchée sur les 
+                     <lb/>coussins de pourpre de <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">sa</rs> galère, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> ferait cer-
+                     <pb n="2" facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f2.item"/><cb n="1"/><lb/>tainement ouvrir les yeux, et, si <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>avais vu pareil-
+                     <lb/>le chose, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> passerais peut-être <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">ma</rs> vie à <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>en 
+                     <lb/>souvenir ; mais, pour souhaiter d'être l'époux de 
+                     <lb/><persName ref="#Desdemona">Desdemona</persName> ou l'amant de <persName ref="#Cleopatre">Cléopâtre</persName>, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> croirais 
+                     <lb/>utile d'être <persName ref="#Othello">Othello</persName> le victorieux ou <persName ref="#Antoine">Antoine</persName> le 
+                     <lb/>magnifique. Tel que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> suis, sans nom, sans ri-
+                     <lb/>chesse et sans gloire, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> tiendrais à distance 
+                     <lb/>de ces divinités pour lesquelles il faut des héros, 
+                     <lb/>ou de ces diablesses auxquelles il faut des mil-
+                     <lb/>lions. Donc, que <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">votre</rs> <rs type="person" ref="#Medora">héroïne</rs> soit une reine ou 
+                     <lb/>une aventurière, regardez-<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous-même</rs>, ou 
+                     <lb/>regardez dans <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">votre</rs> poche avant de monter sur 
+                     <lb/>le piédestal d'où l'idole plongera toujours sur 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs>.</said></p>
+
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">— Ainsi, <rs type="person" ref="#JV">mon cher</rs>, <seg type="narrative_interpolated_clause">reprit-<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs></seg>, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> raisonnez 
+                     <lb/>avec l'amour ? <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Vous</rs> croyez qu'il suffit de se dire : 
+                     <lb/><q type="spoken">« Je ne dois pas désirer cette femme, »</q> pour n'y 
+                     <lb/>plus songer ? Ce serait bien facile ! Ou <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> êtes 
+                     <lb/>singulièrement blasé, ou <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> ne savez ce que 
+                     <lb/>c'est qu'une passion qui <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> envahit. Et d'ail-
+                     <lb/>leurs, <seg type="narrative_interpolated_clause">ajouta-t-<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> après avoir attendu vainement 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">ma</rs> réponse</seg>, il n'y a pas de rang et de richesse 
+                     <lb/>qui tiennent ! Non, il n'y a pas même d'intelli-
+                     <lb/>gence, de fierté ou de pruderie qui défende une
+                     <lb/>femme contre la volonté d'un homme. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> 
+                     <lb/>accorde que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> voilà <rs type="person_desc" subtype="physical_personality" ref="#Brumieres #JV">très laids, avec <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">nos</rs> pale-
+                     <lb/>tots et <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">nos</rs> guêtres de voyageurs, avec <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">nos</rs> poches 
+                     <lb/>mal garnies, <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">nos</rs> noms roturiers, <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">nos</rs> célébrités 
+                     <lb/>d'artiste dont personne encore ne se doute</rs>. Pour 
+                     <lb/>arriver à faire les aimables sur un pied d'égalité 
+                     <lb/>avec des <persName ref="#Cleopatre">Cléopâtre</persName> ou des <persName ref="#Desdemona">Desdemona</persName>, il <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> faudrait
+                     <lb/>d'autres habits, d'autres séductions, d'au-
+                     <lb/>tres museaux, peut-être, car <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">je</rs> vois bien que c'est 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">notre</rs> état ou <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV #Brumieres">notre</rs> apparence d'inégalité qui <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> 
+                     <lb/>choque ; mais c'est trop de modestie… ou trop 
+                     <lb/>d'orgueil ! <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Je me</rs> moque de tout ça, <rs type="person_grammar" subtype="tonic_pronoun" ref="#Brumieres">moi</rs>. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Je</rs> vaux 
+                     <lb/>ce que <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">je</rs> vaux, et si <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">je</rs> parviens à <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">me</rs> faire aimer 
+                     <lb/>jamais d'une merveille de beauté, de luxe et d'es-
+                     <lb/>prit, <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">je me</rs> dirai que <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">je</rs> le méritais et qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle</rs> ne 
+                     <lb/>pouvait pas faire un meilleur choix, puisque avec 
+                     <lb/>rien <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">j'</rs>ai su conquérir <rs type="person_grammar" subtype="demonstrative_pronoun" ref="#Medora">celle</rs> qui avait tout. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">J'</rs>y ai
+                     <cb n="2"/><lb/>souvent pensé ; <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">j'</rs>ai frisé de grandes aventures, et 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> verrez que <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">j'</rs>en attraperai une belle, un jour 
+                     <lb/>ou l'autre. Ces choses-là arrivent toujours à qui 
+                     <lb/>s'y croit destiné, jamais à qui doute de soi-même.</said></p>
+
+                  <p><lb/>Là-dessus, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> nous sommes souhaité le bon-
+                     <lb/>soir, et, <rs type="person_desc" subtype="physical" ref="#Brumieres">enveloppé de <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">son</rs> manteau râpé</rs>, le <rs type="person" ref="#Brumieres">bon 
+                     <lb/>jeune homme</rs> s'est endormi sur un <rs type="place" ref="#Castor">banc</rs>, dans <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">sa</rs> 
+                     <lb/>confiance et dans <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">son</rs> bonheur, dans <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">sa</rs> raison 
+                     <lb/>peut-être ! Ce qui <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> choque et <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>étourdit dans 
+                     <lb/>cette estime de soi que rien ne justifie, c'est 
+                     <lb/>peut-être là, tout de bon, le moyen grossier, mais 
+                     <lb/>toujours sûr, de réaliser ses rêves. Mais où dia-
+                     <lb/>ble va-t-on chercher de pareils rêves ?</p> 
+               </div>
+               
+               <div type="chapter" n="6">
+                  <head rend="center capitals">VI.</head>
+                  <dateline rend="right">
+                     Passé <placeName ref="#Genes">Gênes</placeName>,
+                     <date when-iso="--03-16">16 mars, </date>
+                     <time when-iso="23:00:00">onze heures du soir.</time>
+                  </dateline>
+
+                  <p><lb/>Toujours à bord du <placeName ref="#Castor" rend="italic">Castor</placeName> ! Mais <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>ai passé une 
+                     <lb/>magnifique journée. Ce matin, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je me</rs> suis éveillé 
+                     <lb/>à six heures, après avoir un peu dormi, bien mal-
+                     <lb/>gré <rs type="person_grammar" subtype="tonic_pronoun" ref="#JV">moi</rs>, car c'est un vrai plaisir, pour qui n'en a 
+                     <lb/>pas l'habitude, d'entendre, de voir et de sentir le 
+                     <lb/>flot, même dans les ténèbres. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> dis <emph rend="italic">voir</emph>, parce 
+                     <lb/>que les <rs type="place_desc" subtype="physical" ref="#mediterranee">sillages phosphorescens dessinent mille 
+                     <lb/>arabesques changeantes</rs> autour des flancs du <rs type="place" ref="#Castor">na-
+                     <lb/>vire</rs>. On s'hébête à regarder cela ; il <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> semble 
+                     <lb/>que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> ne <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>en lasserais jamais.</p> 
+                  
+                  <p><lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je m'</rs>étais assoupi ayant froid, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je me</rs> suis éveil-
+                     <lb/>lé ayant chaud. Le soleil brillait déjà, le soleil 
+                     <lb/>d'<placeName ref="#Italie">Italie</placeName> ! C'est lui que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>ai salué le premier, et en-
+                     <lb/>suite <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>ai été libre de saluer le <rs type="place" ref="#port_Genes"><foreign xml:lang="It" rend="italic">gigante</foreign></rs>. Vous con-
+                     <lb/>naissez par les gravures et par le daguerréotype 
+                     <lb/><rs type="place_desc" subtype="physical" ref="#port_Genes">cette riante entrée du <placeName ref="#port_Genes">port de Gênes</placeName>, cette colon-
+                     <lb/>nade des jardins du <placeName ref="#palais_Doria">palais Doria</placeName>, et cette statue 
+                     <lb/>colossale (qui n'est pas celle d'André), qui, de la
+                     <lb/>colline où elle se tient depuis si longtemps sur ses 
+                     <lb/>grosses jambes, semble, d'un air bonhomme, vous 
+                     <lb/>souhaiter la bienvenue. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> ferai donc grâce 
+                     <lb/>de cette description</rs>. <rs type="place_desc" subtype="physical" ref="#Genes">Le premier aspect de la <rs type="place" ref="#Genes">ville</rs> a, 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> le savez, plus d'étrangeté que 
+                     <lb/>de beauté ; mais c'est une étrangeté souriante ; 
+                     <cb n="3"/><lb/>et, ici, le moyen-âge n'a rien laissé d'imposant, 
+                     <lb/>rien de lugubre non plus</rs>.</p>
+                  
+                  <p><lb/>On vous fait attendre le débarquement pendant 
+                     <lb/>deux mortelles heures, et ensuite, pour vous per-
+                     <lb/>mettre de passer une journée sur le <placeName ref="#territoire_sarde">territoire 
+                     <lb/>sarde</placeName>, on vous rançonne sous prétexte de <emph rend="italic">visa</emph>, 
+                     <lb/>sans compter le temps qu'on vous prend encore 
+                     <lb/>à vous faire attendre le bon plaisir de la police et 
+                     <lb/>des ambassades. L'accueil n'a rien d'hospitalier, 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> jure, pour les pauvres diables. Enfin, il 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>a été possible de pénétrer dans la <rs type="place" ref="#Genes">ville</rs> et d'y 
+                     <lb/>chercher, à tout hasard, un coin pour déjeûner. 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">Mon</rs> camarade <persName ref="#Brumieres">Brumières</persName> n'avait pas voulu débar-
+                     <lb/>quer, <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">sa</rs> <rs type="person" ref="#Medora">princesse grecque</rs> ne débarquant pas. 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">l'</rs>ai donc laissé tout le jour sur le <placeName ref="#Castor" rend="italic">Castor</placeName>, oc-
+                     <lb/>cupé à tâcher de renouer la conversation avec 
+                     <lb/>l'objet de ses pensées et à tirer les vers du nez à 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">ses</rs> domestiques. Et puis, il est un peu comme le 
+                     <lb/><rs type="person" ref="#Benvenuto">harpiste</rs>, <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> méprise <placeName ref="#Genes">Gênes</placeName>, <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs> méprise tout ce qui 
+                     <lb/>n'est pas <placeName ref="#Rome">Rome</placeName> et les <placeName ref="#sept_collines">Sept-Collines</placeName>.</p>
+                  
+                  <p><lb/>Le hasard <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>a conduit devant la porte du café 
+                     <lb/>de la <placeName ref="#concordia" rend="italic">Concordia</placeName>. La vue du <rs type="place" ref="#concordia">petit jardin</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>a tenté. 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je me</rs> suis fait servir le café <rs type="place_desc" subtype="physical" ref="#concordia">sous des orangers, 
+                     <lb/>de véritables orangers couverts d'oranges, au
+                     <lb/>milieu de platebandes fleuries auxquelles le so-
+                     <lb/>leil donnait des tons resplendissans</rs>. Mais ne sou-
+                     <lb/>pirez pas trop. Le climat de cette région est si-
+                     <lb/>non aussi froid, du moins aussi variable que 
+                     <lb/>le nôtre. Nos déplorables printemps de ces derniè-
+                     <lb/>res années ont eu ici leur contrecoup, et <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>enten-
+                     <lb/>dais dire autour de <rs type="person_grammar" subtype="tonic_pronoun" ref="#JV">moi</rs> que cette belle journée 
+                     <lb/>était la première de l'année. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">J'</rs>en ai remercié le 
+                     <lb/>ciel, qui <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>a permis de voir ainsi <rs type="place_desc" subtype="physical" ref="#Genes"><rs type="place" ref="#Genes">l'ancienne rei-
+                     <lb/>ne de la <placeName ref="#mediterranee">Méditerranée</placeName></rs> dans toute <rs type="place_grammar" subtype="possessive_pronoun" ref="#Genes">sa</rs> splendeur</rs>.</p>
+                  
+                  <p><lb/><rs type="place_desc" subtype="physical" ref="#Genes">En tant que cité commerçante, progressive et ci-
+                     <lb/>vilisée, <rs type="place_grammar" subtype="personal_pronoun" ref="#Genes">elle</rs> est bien détrônée aujourd'hui par 
+                     <lb/><placeName ref="#Marseille">Marseille</placeName></rs> ; mais comme arrangement et distribution pit-
+                     <lb/>toresque, il y a la différence d'une <rs type="place" ref="#Genes">belle aventuriè-
+                     <lb/>re</rs> à une <rs type="place" ref="#Marseille">belle bourgeoise</rs>. <rs type="place_desc" subtype="physical" ref="#Genes">La première, un peu 
+                     <lb/>follement accoutrée et mêlant des ornements ex-
+                     <lb/>quis à des parures risquées, mais ayant ces grâ-
+                     <cb n="4"/><lb/>ces qui entraînent ou ces originalités qui plai-
+                     <lb/>sent</rs> ; <rs type="place_desc" subtype="physical" ref="#Marseille">l'autre plus sage, plus soumise à la mode, 
+                     <lb/>décente, riche, propre, mais ressemblant à tout 
+                     <lb/>le monde</rs>.</p> 
+                  
+                  <p><lb/><rs type="place_desc" subtype="physical" ref="#Genes">En somme, l'aspect général de <placeName ref="#Genes">Gênes</placeName> n'est pas 
+                     <lb/>satisfaisant, mais le détail est souvent adorable. 
+                     <lb/>Les maisons peintes sont décidément une laide 
+                     <lb/>chose ; heureusement la mode s'en perd. La <rs type="place" ref="#Genes">ville</rs>,
+                     <lb/>jetée sur des plans inégaux, n'a ni queue ni tête, 
+                     <lb/>mais les belles rues sont curieuses et amusantes. 
+                     <lb/>On appelle ici les <emph rend="italic">belles</emph> rues celles qui sont 
+                     <lb/>bordées de beaux palais ; par malheur, elles sont 
+                     <lb/>si étroites que ces beaux palais y sont enfouis. 
+                     <lb/>On passe en admirant les portes et les dessous 
+                     <lb/>de la construction, mais il faut se tordre le cou 
+                     <lb/>pour voir l'édifice, et encore ne se fait-on, quel-
+                     <lb/>que part qu'on se mette, qu'une idée vague 
+                     <lb/>de ses proportions et de son élégance.</rs></p>
+                  
+                  <p><lb/><rs type="place_desc" subtype="physical" ref="#Genes">Il faudrait consacrer une journée à chacune de 
+                     <lb/>ces demeures d'un style varié au dedans comme 
+                     <lb/>au dehors. Cette variété étonne, éblouit, amuse 
+                     <lb/>et fatigue. Il y a beaucoup de marbres, beaucoup
+                     <lb/>de fresques, beaucoup de dorures, et tout cela a 
+                     <lb/>coûté beaucoup d'argent. C'est petit et mignon à 
+                     <lb/>l'extérieur. Au dedans les salles sont vastes, et 
+                     <lb/>l'on s'étonne qu'elles tiennent dans des palais qui 
+                     <lb/>semblent tenir eux-mêmes si peu de place. Plus 
+                     <lb/>loin, il y a de belles promenades bordées de vi-
+                     <lb/>laines petites maisons ; des églises riches et en-
+                     <lb/>combrées de choses précieuses et coûteuses ; et 
+                     <lb/>puis des sentiers à pic, bordés de hautes maisons 
+                     <lb/>très laides, des passages noirs qui s'ouvrent tout à 
+                     <lb/>coup sur des verdures éblouissantes ; puis, le roc 
+                     <lb/>à pic devant et derrière soi ; puis, la <rs type="place" ref="#mediterranee">mer</rs> vue d'en 
+                     <lb/>haut et toujours belle ; des fortifications gigan-
+                     <lb/>tesques, interminables ; des jardins sur les toits ; 
+                     <lb/>des villas jetées au hasard sur les collines envi-
+                     <lb/>ronnantes, profusion de bâtisses criardes, qui, 
+                     <lb/>vues de loin, gâtent le cadre naturel de la <rs type="place" ref="#Genes">ville</rs> ; 
+                     <lb/>enfin, c'est incohérent : ce n'est pas une cité, 
+                     <lb/>c'est un amas de nids que toutes sortes d'oiseaux 
+                     <cb n="5"/><lb/>sont venus construire là, chacun faisant à sa tête 
+                     <lb/>et s'emparant de la place et des matériaux qui lui 
+                     <lb/>plaisaient. Si on ne se disait pas que c'est l'<placeName ref="#Italie">Italie</placeName>,
+                     <lb/>on se persuaderait volontiers que ce n'est pas 
+                     <lb/>ce que l'on attendait ; mais il faut ne point
+                     <lb/>penser à cela, et plutôt se livrer à cette influence 
+                     <lb/>de désordre et de caprice qui rend un peu fou à 
+                     <lb/>première vue</rs>.</p> 
+                  
+                  <p><lb/>Après avoir couru deux ou trois heures, tantôt 
+                     <lb/>choqué, tantôt ravi, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> suis entré dans quelques 
+                     <lb/>palais. Ah !<rs type="person" ref="#Destinataire">mon ami</rs>, que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>ai vu de beaux 
+                     <lb/><persName ref="#Van_Dick">VanDicks</persName> et de beaux <persName ref="#Veronese">Véronèses</persName> ! Mais les étranges 
+                     <lb/>intérieurs que ceux de ces nobles Génois ! Quels 
+                     <lb/>drôles de petits détails attestant l'incurie ou l'ab-
+                     <lb/>sence du goût ! quelles croûtes de portraits mo-
+                     <lb/>dernes, quels mesquins petits meubles ! quelles 
+                     <lb/>plaisantes acquisitions de la veille au milieu de 
+                     <lb/>ces chefs-d’œuvre, de ces décorations splendides 
+                     <lb/>et de ces raretés rapportées par les ancêtres 
+                     <lb/>voyageurs ou trafiquants éclairés ! Comme la pe- 
+                     <lb/>tite faïence anglaise jure à côté de la monumen-
+                     <lb/>tale potiche de Chine, et comme nos colifichets 
+                     <lb/>d'industrie française à bon marché d'il y a dix 
+                     <lb/>ans sont étonnés de se trouver mêlés à ces vieux 
+                     <lb/>marbres et à ces fières peintures !</p>
+                  
+                  <p><lb/>Il semble que les descendants des illustrissimes 
+                     <lb/>navigateurs aient pris en dégoût tout ce luxe de 
+                     <lb/>pirates, ou que la lassitude du cérémonial ait ga-
+                     <lb/>gné les têtes, comme celle de <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> <rs type="person" ref="#Lord_B">Anglais</rs> de la 
+                     <lb/><placeName ref="#reserve">Réserve</placeName>. Peut-être ont-ils perdu quelque chose de 
+                     <lb/>plus que le goût de la magnificence, le goût du 
+                     <lb/>beau. On va jusqu'à dire que, dans certains pa-
+                     <lb/>lais, des toiles de grands maîtres ont été vendues 
+                     <lb/>aux étrangers par des gardiens infidèles, rempla-
+                     <lb/>cées par des copies médiocres, et que les proprié-
+                     <lb/>taires ne s'en sont pas encore aperçu.</p>
+                  
+                  <p><lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> ne <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> affirme nullement le fait ; mais, pour 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> résumer <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> impression générale, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> 
+                     <lb/>dirai qu'ici tout est surprise charmante ou brus-
+                     <lb/>que déception. Si <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>eusse été en humeur de tra-
+                     <lb/>vailler, le pittoresque <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>eût pourtant retenu ; il 
+                     <pb n="3" facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f3.item"/><cb n="1"/><lb/>est à chaque pas, <rs type="place_desc" subtype="physical" ref="#Genes">dans une <rs type="place" ref="#Genes">ville</rs> aussi raboteuse ; 
+                     <lb/>il faudrait s'arrêter devant toutes ces ruelles qui 
+                     <lb/>se tordent et se précipitent d'un plan à l'autre, 
+                     <lb/>passant sous des arcades multipliées qui relient 
+                     <lb/>les maisons entre elles et projettent, sur ces pro-
+                     <lb/>fondeurs brillantes, des ombres d'un velouté et 
+                     <lb/>d'une transparence inouïs</rs>. Oh ! s'il ne s'agissait 
+                     <lb/>que de peinture, la vie tout entière d'un artiste 
+                     <lb/>minutieux pourrait bien se consumer devant une 
+                     <lb/>de ces ruelles à perspective mouvementée ! Mais 
+                     <lb/>il s'agit d'autre chose ; il s'agit d'avancer, de com-
+                     <lb/>prendre, de vivre si faire se peut ! </p>
+                  
+                  <p><lb/>Pendant que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>avalais <placeName ref="#Genes">Gênes</placeName> des yeux, des jam-
+                     <lb/>bes et de l'esprit, mons <persName ref="#Brumieres">Brumières</persName> poursuivait 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">sa</rs> <rs type="person" ref="#Medora">déesse</rs>. Mais voilà où recommence l'aventure, 
+                     <lb/>qui, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>espère, va <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> faire oublier l'informe es-
+                     <lb/>quisse que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> viens de mettre sous <rs type="person_grammar" subtype="possessive_pronoun" ref="#Destinataire">vos</rs> yeux.</p>
+                  
+                  <p><lb/>Quand, à huit heures du soir, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> suis remonté, 
+                     <lb/>affamé et harassé, sur le <placeName ref="#Castor" rend="italic">Castor</placeName>, <rs type="person_grammar" subtype="personal_pronoun">j'</rs>ai trouvé le 
+                     <lb/><rs type="place" ref="#Castor">pont</rs> tellement encombré de beau monde, qu'on 
+                     <lb/>eût dit d'une fête. Ce bruit et cette <rs type="person" ref="#passagers">foule</rs> venaient 
+                     <lb/>d'un notable surcroît de passagers à bord ; des 
+                     <lb/><rs type="person" ref="#passagers">Anglais</rs>, toujours des Anglais, et puis, quelques 
+                     <lb/><rs type="person" ref="#passagers">Français</rs> et quelques <rs type="person" ref="#passagers">indigènes</rs>, ces derniers 
+                     <lb/>ayant amené là toute <rs type="person_grammar" subtype="personal_pronoun" ref="#passagers">leur</rs> famille et tous <rs type="person_grammar" subtype="personal_pronoun" ref="#passagers">leurs</rs> a-
+                     <lb/>mis, qui, en manière d'adieux, causaient gaîment 
+                     <lb/>avec eux, en attendant le moment de lever l'ancre.</p>
+                  
+                  <p><lb/>Au milieu de cette bagarre, que rendaient plus 
+                     <lb/>étourdissante les chanteurs et guitaristes ambu-
+                     <lb/>lants postés dans des barques autour du <placeName ref="#Castor" rend="italic">Castor</placeName>, et 
+                     <lb/>tendant leurs casquettes aux <persName ref="#passagers">passagers</persName>, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>eus le 
+                     <lb/>temps de remarquer, encore une fois, que le Gé-
+                     <lb/>nois était expansif, babillard, enjoué, commère 
+                     <lb/>et avenant. Cela était, du moins, écrit sur toutes 
+                     <lb/>les figures et dans toutes les intonations de ceux 
+                     <lb/>qui parlaient le patois. Les prêtres surtout <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> 
+                     <lb/>parurent gais et sémillants, ressemblant fort peu, 
+                     <lb/>dans leurs allures, à ceux de France. On voit 
+                     <cb n="2"/><lb/>qu'ils sont mêlés plus que les nôtres à la société 
+                     <lb/>locale et à ses préoccupations temporelles. Pour-
+                     <lb/>tant, l'opinion générale est ici en grande réaction 
+                     <lb/>contre eux, à ce que l'on <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>a dit.</p>
+                  
+                  <p><lb/>Enfin, le son de la cloche <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #passagers #equipage">nous</rs> délivra de tous 
+                     <lb/>les visiteurs, qui s'envolèrent sur leurs barques, 
+                     <lb/>envoyant de gais adieux et de bons souhaits à 
+                     <lb/>l'<persName ref="#equipage">équipage</persName>, et quand l'ordre eut un peu agrandi 
+                     <lb/>l'espace, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> pus chercher et retrouver <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> ami 
+                     <lb/><persName ref="#Brumieres">Brumières</persName>, tandis que le <rs type="place" ref="#Castor">steamer</rs> se remettait en 
+                     <lb/>marche.</p>
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">— <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">J'</rs>ai passé une sotte journée, <seg type="narrative_interpolated_clause"><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> dit-<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs></seg> ; <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">ma</rs> 
+                     <lb/><rs type="person" ref="#Medora">princesse</rs> a dormi tout le temps dans <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">sa</rs> <rs type="place" ref="#Castor">cabine</rs>, 
+                     <lb/>d'où <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">elle</rs> est enfin sortie, parfumée et coiffée à 
+                     <lb/>ravir, il n'y a pas plus d'une heure. <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">J'</rs>ai réussi à 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">l'</rs>accoster ; mais <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">sa</rs> chère <rs type="person" ref="#Harryet">tante</rs>, n'ayant plus le 
+                     <lb/>mal de mer, est venue <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">me</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora">l'</rs>enlever : <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> pouvez 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Medora #Harryet">les</rs> voir là-bas qui se moquent de <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres #JV">nous</rs> !</said></p>
+                  
+                  <p><lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> regardai la <rs type="person" ref="#Harryet">tante</rs>, qui <rs type="person_desc" subtype="physical" ref="#Harryet"><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>avait paru vieille, 
+                     <lb/>hier, mais qui, débarrassée de ses coiffes et de 
+                     <lb/>l'affreux abat-jour vert que les Anglaises mettent 
+                     <lb/>maintenant en voyage autour de la passe de leurs 
+                     <lb/>chapeaux, est une assez jolie femme grasse, sur 
+                     <lb/>le retour</rs>. <rs type="person_desc" subtype="physical" ref="#Medora">La <emph rend="italic"><rs type="person" ref="#Medora">princesse</rs></emph> avait, en effet, arrangé <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">ses</rs> 
+                     <lb/>magnifiques cheveux bruns d'une façon très ar-
+                     <lb/>tiste et daignait <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs> les laisser admirer, en te-
+                     <lb/>nant à la main <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">son</rs> petit chapeau de paille à ru-
+                     <lb/>bans de velours vert</rs>. Du reste, <rs type="person_grammar" subtype="demonstrative_pronoun" ref="#Medora #Harryet">ces</rs> <rs type="person" ref="#Medora #Harryet">deux dames</rs> 
+                     <lb/>ne <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">me</rs> paraissaient faire aucune attention à <rs type="person_grammar" subtype="personal_pronoun" ref="#JV #Brumieres">nous</rs>.</p> 
+                  
+                  <p><lb/><said who="#JV" direct="true" toWhom="#Brumieres">— Et, maintenant, <seg type="narrative_interpolated_clause">dis-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> à <persName ref="#Brumieres">Brumières</persName></seg>, puisque 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> étiez si intrigué, <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> savez du moins qui 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Medora #Harryet">elles</rs> sont ? <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> avez eu le temps de <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> en en-
+                     <lb/>quérir ?</said></p>
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">— La <rs type="person" ref="#Harryet">tante</rs> est une Anglaise pur sang, <seg type="narrative_interpolated_clause">répon-
+                     <lb/>dit-<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il</rs></seg>. La <rs type="person" ref="#Medora">nièce</rs> n'est peut-être pas sa nièce. Voilà 
+                     <lb/>tout ce que je sais. <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora #Harryet">Leurs</rs> bagages sont au fond 
+                     <lb/>de la <rs type="place" ref="#Castor">cale</rs> ; pas un nom, des chiffres tout au plus, 
+                     <lb/>sur <rs type="person_grammar" subtype="personal_pronoun" ref="#Medora #Harryet">leurs</rs> nécessaires de voyage. Le <rs type="person" ref="#Lord_B">domestique</rs> 
+                     <cb n="3"/><lb/>ne sait pas un mot de français, et je ne sais pas 
+                     <lb/>un mot d'anglais ! Quant à la <rs type="person" ref="#Daniella">soubrette italienne</rs>, 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Daniella">elle</rs> est malade à mourir, à ce que prétend 
+                     <lb/><persName ref="#Benvenuto">Benvenuto</persName>.</said></p>
+                  
+                  <p><lb/><said who="#JV" direct="true" toWhom="#Brumieres">— Qui ça, <persName ref="#Benvenuto">Benvenuto</persName> ?</said></p>
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">—<rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">Votre</rs> <rs type="person" ref="#Benvenuto">harpiste</rs> ! <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs> s'appelle <persName ref="#Benvenuto">Benvenuto</persName>, l'ani-
+                     <lb/>mal ! <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">J'</rs>espérais qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">il me</rs> serait utile. <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">Il</rs> avait flairé 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">ma</rs> préoccupation sentimentale, et, venant au-
+                     <lb/>devant de <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">mes</rs> désirs, <rs type="person_grammar" subtype="personal_pronoun" ref="#Benvenuto">il</rs> se mettait au service de 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">ma</rs> passion avec cette inimitable courtoisie et 
+                     <lb/>cette délicieuse pénétration qui caractérisent 
+                     <lb/>certaine classe d'hommes très employés et très
+                     <lb/>répandus en <placeName ref="#Italie">Italie</placeName>… sur les <placeName ref="#sept_collines">Sept-Collines</placeName>, parti-
+                     <lb/>culièrement ; mais <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">je</rs> soupçonne le drôle d'avoir 
+                     <lb/>bu <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">ma</rs> <emph rend="italic">bonne-main</emph> et de ronfler sous quelque 
+                     <lb/>malle. Bref, <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">je</rs> ne sais rien du tout, sinon que 
+                     <lb/>l'on va à <placeName ref="#Rome">Rome</placeName>, ce qui laisse <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">mon</rs> espérance in-
+                     <lb/>tacte. Si <rs type="place_desc" subtype="physical" ref="#mediterranee">cette <rs type="place" ref="#mediterranee">diable de mer</rs> que voilà coulante
+                     <lb/>comme de l'huile</rs> pouvait se courroucer un peu, 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">j'</rs>espérerais que la <rs type="person" ref="#Harryet">tante</rs> retournerait vite à <rs type="person_grammar" subtype="possessive_pronoun" ref="#Harryet">ses</rs> 
+                     <lb/>oreillers… Mais qu'est-ce que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> avez, <rs type="person" ref="#JV">mon 
+                     <lb/>cher</rs> ? et à qui est-ce que <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">je</rs> parle ?</said></p>
+                  
+                  <p><lb/><said who="#JV" direct="true" toWhom="#Brumieres">— A quelqu'un qui <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> écoute d'une oreille, 
+                     <lb/>mais qui, de l'autre, reconnaît une voix… Tenez, 
+                     <lb/><rs type="person" ref="#Brumieres">mon cher</rs>, <rs type="person_grammar" subtype="demonstrative_pronoun" ref="#Harryet">cette</rs> <rs type="person" ref="#Harryet">dame</rs> qui emmène <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">votre</rs> <rs type="person" ref="#Medora">prin-
+                     <lb/>cesse</rs> en <placeName ref="#Italie">Italie</placeName> est bien <rs type="person_grammar" subtype="possessive_pronoun" ref="#Medora">sa</rs> <rs type="person" ref="#Harryet">tante</rs>, c'est <rs type="person" ref="#Harryet">mylady 
+                     <lb/><emph rend="italic">trois étoiles</emph></rs>. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> ne connais que <rs type="person_grammar" subtype="possessive_pronoun" ref="#Harryet">son</rs> nom de bap-
+                     <lb/>tême, <persName ref="#Harryet">Harryet</persName> ; mais <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> sais qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Harryet">elle</rs> a épousé par 
+                     <lb/>amour <rs type="person_desc" subtype="personality" ref="#Lord_B">un <rs type="person" ref="#Lord_B">cadet de famille</rs> qui s'est laissé enri-
+                     <lb/>chir de huit cent milles livres de rentes, un très
+                     <lb/>bon et très honnête homme, pas gai tous les jours</rs> ; 
+                     <lb/>mais ceci ne fait rien à l'affaire. <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">Votre</rs> <rs type="person" ref="#Medora">héroïne</rs> est 
+                     <lb/>bien réellement une personne de grande maison, 
+                     <lb/>et peut-être l'héritière future de cette grande 
+                     <lb/>fortune, car <rs type="person" ref="#Lord_B">mylord</rs> et <rs type="person" ref="#Harryet">mylady</rs> n'ont pas d'enfans.</said></p>
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">— <rs type="person" ref="#JV">Zadig</rs> ! <seg type="narrative_interpolated_clause">s'écria <persName ref="#Brumieres">Brumières</persName> transporté de joie</seg>, 
+                     <lb/>où diable avez-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> appris tout cela ?</said></p>
+                  
+                  <p><lb/><said who="#JV" direct="true" toWhom="#Brumieres">— <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">Vous</rs> voyez bien, <seg type="narrative_interpolated_clause">repris-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs></seg>, en <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">lui</rs> montrant 
+                     <cb n="4"/><lb/><rs type="person_desc" subtype="physical" ref="#Lord_B">un <rs type="person" ref="#Lord_B">Anglais</rs> chauve, à pantalon grillagé</rs>, qui s'était 
+                     <lb/>approché assez respectueusement des <rs type="person" ref="#Harryet #Medora">deux fem-
+                     <lb/>mes</rs>, que voilà <rs type="person" ref="#Lord_B">mylord</rs> qui parle à <rs type="person_grammar" subtype="possessive_pronoun" ref="#Lord_B">sa</rs> <rs type="person" ref="#Harryet">femme</rs> !</said></p>
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">— Çà ? c'est le <rs type="person" ref="#Lord_B">domestique</rs> !</said></p>
+                  
+                  <p><lb/><said who="#JV" direct="true" toWhom="#Brumieres">— <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> jure que non ; et s'<rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">il</rs> n'a pas voulu
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> répondre, c'est que <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> ne <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">lui</rs> êtes pas 
+                     <lb/>présenté, et que, devant <rs type="person" ref="#Harryet">mylady</rs>, il ne veut pas 
+                     <lb/>paraître ce qu'<rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">il</rs> est, un homme sans morgue et 
+                     <lb/>parlant le français aussi facilement que <rs type="person_grammar" subtype="personal_pronoun" ref="#Brumieres">vous</rs> et 
+                     <lb/><rs type="person_grammar" subtype="tonic_pronoun" ref="#JV">moi</rs>.</said></p>
+                  
+                  <p><lb/><said who="#Brumieres" direct="true" toWhom="#JV">— Encore une fois, <rs type="person" ref="#JV">Zadig</rs>, expliquez-<rs type="person_grammar" subtype="personal_pronoun" ref="#JV">vous</rs> !</said></p> 
+                  
+                  <p><lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> refusai de <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>expliquer, autant pour <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> di-
+                     <lb/>vertir de l'étonnement de <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> <rs type="person" ref="#Brumieres">camarade</rs>, que 
+                     <lb/>pour obéir à un sentiment, peut-être exagéré, de 
+                     <lb/>délicatesse. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">J'</rs>avais surpris les secrets du ména-
+                     <lb/>ge de <rs type="person" ref="#Lord_B">lord <emph rend="italic">trois étoiles</emph></rs>, en écoutant, avec une at-
+                     <lb/>tention dont <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> pouvais bien <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> dispenser, <rs type="person_grammar" subtype="possessive_pronoun" ref="#Lord_B">ses</rs> 
+                     <lb/>confidences à un ami, à travers une cloison du 
+                     <lb/>cabaret de la <placeName ref="#reserve" rend="italic">Réserve</placeName>. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> crois que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> devais 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>en tenir là, et ne pas les divulguer.</p>
+                  
+                  <p><lb/>Maintenant, <rs type="person" ref="#Destinataire">mon ami</rs>, <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> allez aussi <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> trai-
+                     <lb/>ter de <rs type="person" ref="#JV">Zadig</rs> et <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> demander comment <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> recon-
+                     <lb/>naissais un <rs type="person" ref="#Lord_B">homme</rs> dont <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> n'avais pas aperçu la 
+                     <lb/>figure. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> répondrai que d'abord <rs type="person_desc" subtype="personality" ref="#Lord_B"><rs type="person_grammar" subtype="possessive_pronoun" ref="#Lord_B">sa</rs> voix, <rs type="person_grammar" subtype="possessive_pronoun" ref="#Lord_B">sa</rs>
+                     <lb/>prononciation, <rs type="person_grammar" subtype="possessive_pronoun" ref="#Lord_B">ses</rs> intonations tristes et comiques
+                     <lb/>à la fois</rs>, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">m'</rs>étaient restées dans l'oreille d'une fa- 
+                     <lb/>çon toute particulière. Si <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> voulais <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> faire va-
+                     <lb/>loir comme devin, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>ajouterais qu'il est certains traits, 
+                     <lb/>certaines physionomies et certaines tournu-
+                     <lb/>res qui s'adaptent si parfaitement à certaines ma-
+                     <lb/>nières de s'exprimer, et à certaines révélations de 
+                     <lb/>caractère et de situation, qu'il n'y a pas moyen de 
+                     <lb/>les méconnaître. Mais, pour rester dans l'exacte vé-
+                     <lb/>rité, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> dois <rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> avouer qu'au moment où <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> quit-
+                     <lb/>tais le cabaret de la <placeName ref="#reserve" rend="italic">Réserve</placeName>, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je m'</rs>étais trouvé 
+                     <lb/>face à face sur <rs type="place" ref="#reserve">l'escalier extérieur</rs> avec <rs type="person" ref="#Lord_B #officier">les deux 
+                     <lb/>personnages</rs>, au moment où un garçon leur pré-
+                     <cb n="5"/><lb/>sentait sa lanterne pour allumer <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B #officier">leurs</rs> cigares. 
+                     <lb/><rs type="person" ref="#officier">L'un</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> parut un <persName ref="officier">officier de marine</persName> ; <rs type="person" ref="#Lord_B">l'autre</rs>, c'é-
+                     <lb/>tait l'<rs type="person_desc" subtype="physical" ref="#Lord_B"><rs type="person" ref="#Lord_B">homme</rs> à front chauve, à casquette vernie 
+                     <lb/>renversée en arrière, à pantalon grillagé</rs>, que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> 
+                     <lb/>voyais en ce moment échanger quelques paroles 
+                     <lb/>avec <rs type="person" ref="#Harryet">mylady</rs>. <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B #Harryet">Leur</rs> conversation ne fut pas lon-
+                     <lb/>gue. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> ne l'entendis pas ; mais, à coup sûr, <rs type="person_grammar" subtype="personal_pronoun">je</rs> la 
+                     <lb/>traduirais ainsi : « <said who="#Harryet" direct="true" toWhom="#Lord_B"><rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">Vous</rs> avez fumé ?</said> <said who="#Lord_B" direct="true" toWhom="#Harryet">— <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">Je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Harryet">vous</rs> 
+                     <lb/>jure que non.</said> <said who="#Harryet" direct="true" toWhom="#Lord_B">— <rs type="person_grammar" subtype="personal_pronoun" ref="#Harryet">Je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">vous</rs> jure que si</said>. » Et <rs type="person" ref="#Lord_B">mylord</rs> 
+                     <lb/>s'éloigna d'un air résigné, siflotta un moment, 
+                     <lb/>en regardant les étoiles, et s'en alla fumer der-
+                     <lb/>rière la <rs type="place" ref="#Castor">cheminée de la chaudière</rs>. <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">Il</rs> n'y eût 
+                     <lb/>peut-être pas songé, mais <rs type="person_grammar" subtype="possessive_pronoun" ref="#Lord_B">sa</rs> <rs type="person" ref="#Harryet">femme</rs> venait de <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">lui</rs> 
+                     <lb/>en donner l'envie.</p>
+                  
+                  <p><lb/><persName ref="#Brumieres">Brumières</persName>, enchanté de <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mes</rs> découvertes, vient 
+                     <lb/>de voir un autre de <rs type="person_grammar" subtype="possessive_pronoun" ref="#Brumieres">ses</rs> souhaits exaucés : le 
+                     <lb/>temps s'est brouillé, la <rs type="place" ref="#mediterranee">mer</rs> s'est fait sentir plus 
+                     <lb/>rude.<persName ref="#Harryet">Lady Harryet</persName> a quitté le <rs type="place" ref="#Castor">pont</rs>. La <rs type="person" ref="#Medora">nièce</rs>, 
+                     <lb/>qui paraît d'une solidité à toute épreuve, est res- 
+                     <lb/>tée sur le <rs type="place" ref="#Castor">banc</rs> avec la <rs type="person" ref="#Daniella">femme de chambre</rs>, et <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">j'</rs>ai 
+                     <lb/>laissé <rs type="person_grammar" subtype="possessive_pronoun" ref="#JV">mon</rs> <rs type="person" ref="#Brumieres">camarade</rs> tournant autour d'<rs type="person_grammar" subtype="personal_pronoun" ref="#Medora #Daniella">elles</rs>. <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">Je</rs> 
+                     <lb/><rs type="person_grammar" subtype="personal_pronoun" ref="#Destinataire">vous</rs> écris du <rs type="place" ref="#Castor">salon</rs> où, en ce moment, <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> vois 
+                     <lb/>apparaître <rs type="person" ref="#Lord_B">mylord trois étoiles</rs> avec un très vilain 
+                     <lb/>chien jaunâtre que <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">le</rs> soupçonne d'avoir acheté 
+                     <lb/>à <placeName ref="#Genes">Gênes</placeName> pour se faire renvoyer plus souvent par 
+                     <lb/><rs type="person_grammar" subtype="possessive_pronoun" ref="#Lord_B">sa</rs> <rs type="person" ref="#Harryet">femme</rs>. Ils se font mutuellement (<rs type="person" ref="#Lord_B">mylord</rs> et <rs type="person_grammar" subtype="possessive_pronoun" ref="#Lord_B">son</rs> 
+                     <lb/>chien) de grandes amitiés. Pauvre <rs type="person" ref="#Lord_B">lord</rs>, <emph rend="italic">trois étoi-</emph>
+                     <lb/><emph rend="italic">les</emph> ! <rs type="person_grammar" subtype="personal_pronoun" ref="#Lord_B">Il</rs> sera peut-être aimé, au moins, de ce chien-
+                     <lb/>là ! Mais <rs type="place_desc" subtype="physical" ref="#mediterranee">le roulis augmente</rs> et il <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">me</rs> devient diffi-
+                     <lb/>cile d'écrire. La nuit se fait maussade en plein 
+                     <lb/>air, et <rs type="person_grammar" subtype="personal_pronoun" ref="#JV">je</rs> vais <rs type="person_grammar" subtype="personal_pronoun">me</rs> reposer des <rs type="place_desc" subtype="physical" ref="#Genes">rues perpendiculai-
+                     <lb/>res et du terrible pavé de briques de <placeName ref="#Genes">Gênes</placeName> la
+                     <lb/>superbe</rs>.</p> 
+             
+
+                  <fw type="sig" rend="end right capitals"><persName ref="#GS">George Sand</persName>.</fw>
+                  <p><hi rend="end left italic">(La suite à demain.)</hi></p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

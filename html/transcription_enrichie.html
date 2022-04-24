@@ -1,0 +1,608 @@
+<html xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta name="description" content="Projet d'édition numérique du roman-feuilleton La Daniella  de George Sand"></meta>
+      <meta name="keywords" content="edition, roman-feuilleton, xml, tei, xslt"></meta>
+      <meta name="author" content="Fanny Lebreton"></meta><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"></link><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark mb-4" style="background-color: #6495ED;"><a class="navbar-brand" style="padding-left: 5px" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pageAccueil.html">La Daniella de George Sand</a><ul class="navbar-nav mr-auto">
+            <div class="dropdown"><button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projet d'édition
+                  </button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/metadonnees.html">Métadonnées</a></li>
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/projet.html">Projet</a></li>
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/consignes.html">Consignes</a></li>
+               </ul>
+            </div>
+            <div class="dropdown"><button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Types de transcription
+                  </button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/transcription.html">Transcription brute</a></li>
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/transcription_enrichie.html">Transcription enrichie</a></li>
+               </ul>
+            </div>
+            <div class="dropdown"><button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Index
+                  </button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Index des personnages</a></li>
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Index des lieux</a></li>
+               </ul>
+            </div>
+            <div class="dropdown"><button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Analyses contextuelles
+                  </button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/relations_perso.html">Relations entre les personnages</a></li>
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/fiche_descriptive_perso.html">Fiche descriptive des personnages</a></li>
+                  <li><a class="dropdown-item" href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/fiche_descriptive_lieu.html">Fiche descriptive des lieux</a></li>
+               </ul>
+            </div>
+         </ul>
+      </nav>
+      <div class="container">
+         <div>
+            <hr></hr>
+            <h4 class="text-center text-uppercase">Feuilleton de la presse</h4>
+            <h6 class="text-center text-uppercase">Du lundi soir 12 janvier 1857.</h6><br></br><h1 class="text-center text-uppercase">La Daniella.</h1><br></br><p class="text-center">V (Suite).</p>
+            <p class="text-end">15 mars.</p>
+            <p><br></br>Me voilà enfin sur le <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Castor</a>, en vue des
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">côtes d'Italie</a>. La journée a été claire et fraîche à bord. 
+               <br></br>Les rivages escarpés sont toujours magnifiques.<br></br>Ce soir, le vent est tombé, la brume a envahi 
+               <br></br>les horizons. Trois goëlands, qui nous suivaient au 
+               <br></br>coucher du soleil, et qui s'obstinaient à vouloir 
+               <br></br>percher sur la banderolle de fumée noire que
+               <br></br>notrevapeur lance à intervalles égaux, se sont 
+               <br></br>enfin décidés à nous quitter après des cris d'a- 
+               <br></br>dieu d'une douceur étrange. Le <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">phare de Nice</a><br></br>perce le brouillard. Presque personne n'est mala- 
+               <br></br>de. Pour moi, je n'aurai jamais le plus petit mal- 
+               <br></br>aise en mer, je sens cela. J'ai un coin pour vous<br></br>écrire, et je vais vous raconter les incidents de la
+               <br></br>journée.</p>
+            <p><br></br>D'abord, moncamarade le peintre, qui me<br></br>prend pour un petit amateur paresseux, et par 
+               <br></br>qui je trouve assez commode d'être piloté et pro-
+               <br></br>tégé, m'a tenu compagnie tout le temps, et ne 
+               <br></br>m'a pas fait grace d'un terme du métier, en me<br></br>montrant le ciel, la vague et les masses de ro-
+               <br></br>cher au milieu desquels le steamernous pro- 
+               <br></br>mène. Il était tout étonné que je n'eusse aucune 
+               <br></br>notion de l'argot des peintres, qu'il lui plaît d'ap- 
+               <br></br>peler la langue de l'art. Car il faut vous avouer 
+               <br></br>que, pour passer le temps, je me suis amusé à 
+               <br></br>feindre la plus complète ignorance des us, coutu- 
+               <br></br>mes et locutions de l'atelier. Il était bien près de 
+               <br></br>me mépriser. Cependant la docilité que j'ai mise 
+               <br></br>à l'écouter l'a un peu mieux disposé en ma faveur. 
+               <br></br>Ilm'a montré ensuite ses croquis de <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Marseille</a>. 
+               <br></br>C'est habilement fait&nbsp;; il y a ce qu'il appelle de<br></br>la patte, une fière patte&nbsp;; mais cela n'est pas plus 
+               <br></br>l'endroit dont jel'ai vu charmé, que tout autre 
+               <br></br>endroit du monde. Les formes y sont, le senti- 
+               <br></br>ment n'y est pas. J'ai essayé de le lui faire en- 
+               <br></br>tendre. A mon tour, jelui parlais une langue qu'il<br></br>ne comprenait point et qui n'avait pas, comme 
+               <br></br>son argot d'atelier, le mérite d'être amusante.</p>
+            <p><br></br>C'est, du reste, un aimable garçon que ce 
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a>. Il a une trentaine d'années, quelques pe- 
+               <br></br>tites ressources qui lui permettent de refaire le 
+               <br></br>voyage de <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Rome</a>, bien que ses études soient ce 
+               <br></br>qu'il appelle terminées&nbsp;; une jolie figure, de la 
+               <br></br>gaîté qui ressemble à de l'esprit, et un très agréa- 
+               <br></br>ble caractère.</p>
+            <p><br></br>Comme nous causions de l'itinéraire de notre<br></br>voyage, un monsieur des troisiemes, c'est à dire un 
+               <br></br>prolétaire voyageant au dernier prix, et qui avait 
+               <br></br>une attitude dantesque, comme s'il se fût agi de 
+               <br></br>naviguer sur l'<a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Achéron</a>, se mêla de notre conver-
+               <br></br>sation et nous conseilla de ne pas perdre notre<br></br>temps à <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Gênes</a>, ville pour laquelle il affichait un 
+               <br></br>profond mépris.</p>
+            <p><br></br>La figure de cethomme ne m'était pas incon-
+               <br></br>nue. — Où donc vous ai-je vu&nbsp;? lui demandai-je.<br></br>— Il y a deux jours, excellence, répondit-il<br></br>en assez bon français. Je jouais de la harpe 
+               <br></br>à la <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Réserve</a>…— Ah&nbsp;! c'est vous&nbsp;? Eh bien, où 
+               <br></br>est-elle donc, votre harpe&nbsp;?— Elle n'est plus&nbsp;! 
+               <br></br>Ils se sont pris de vin, colletés, battus. Dans 
+               <br></br>la bagarre, ma pauvre harpe a eu le ventre 
+               <br></br>écrasé sous une table. Et Dieu sait qu'elle était lour-
+               <br></br>de : il y avait six hommes dessus&nbsp;! Quand ils ont 
+               <br></br>été dessous, il n'y a pas eu moyen de leur faire 
+               <br></br>entendre qu'ilsm'avaient détruit mon gagne-pain. 
+               <br></br>Ce n'est pas qu'ils soient méchants&nbsp;; non, certai-
+               <br></br>nement&nbsp;: à jeun, le marin est une bonne pâte
+               <br></br>d'homme. Mais le rhum, mossiou&nbsp;! Que voulez-
+               <br></br>vous faire contre cela&nbsp;? Ilsm'auraient tué&nbsp;! J'ai 
+               <br></br>laissé là ma harpe, et je vais tâcher de faire quel-
+               <br></br>que autre métier. Aussi bien, j'en avais assez de 
+               <br></br>la musique et de la <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">France</a>. Je suis un Romain, 
+               <br></br>moi, excellence.&nbsp;» Et, là-dessus, il se redressa de 
+               <br></br>la hauteur de ses quatre pieds et demi, taille 
+               <br></br>d'enfant qui ne l'empêche pas de posséder une 
+               <br></br>barbe de sapeur et une chevelure à l'avenant. «&nbsp;Je 
+               <br></br>suis un Romain, poursuivit-il avec emphase, et 
+               <br></br>j'ai besoin de me retrouver sur les <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Sept-Collines</a>.</p>
+            <p><br></br>— C'est bien vu, lui dit <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a>, les 
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Sept-Collines</a> doivent avoir besoin de toi&nbsp;! Mais quel métier 
+               <br></br>y faisais-tu, là, et à quoi vas-tu consacrer tes pré-
+               <br></br>cieux jours&nbsp;?</p>
+            <p><br></br>— Je ne faisais rien&nbsp;! répondit-il, et je compte 
+               <br></br>ne rien faire, aussitôt que j'aurai amassé quelques 
+               <br></br>sous pour passer l'année.</p>
+            <p><br></br>— Tu n'as donc rien épargné dans ta vie er-
+               <br></br>rante ?</p>
+            <p><br></br>— Pas même de quoi payer mon passage sur 
+               <br></br>le <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Castor</a>&nbsp;; mais ilsme connaissent et ne me par-
+               <br></br>leront pas d'argent avant <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Civita-Vecchia</a>.</p>
+            <p><br></br>— Mais alors…</p>
+            <p><br></br>— Alors, à la garde de Dieu&nbsp;! répondit-il avec 
+               <br></br>philosophie. Peut-être vos excellencesme don-
+               <br></br>neront-elles un petit secours…</p>
+            <p><br></br>— Ah&nbsp;! tu mendies&nbsp;? s'écria <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a>&nbsp;; tu es 
+               <br></br>bien Romain, nous n'en pouvons plus douter. 
+               <br></br>Tiens, voilà mon aumône. Fais le tour de l'éta-
+               <br></br>blissement.</p>
+            <p><br></br>— Rien ne presse&nbsp;! peu à peu&nbsp;! reprit le Bohé-
+               <br></br>mien en me tendant une main, tandis que, de 
+               <br></br>l'autre, il mettait les cinquante centimes de
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a> dans sa poche.</p>
+            <p><br></br>— Si c'est là le type romain… dis-je à mon<br></br>compagnon, quand le harpiste se fut éloigné.</p>
+            <p><br></br>— C'est le type abâtardi&nbsp;; et pourtant cethom-
+               <br></br>me dégénéré est encore très beau&nbsp;; que vous en
+               <br></br>semble&nbsp;?</p>
+            <p><br></br>Il ne me semblait pas du tout. Cette énorme 
+               <br></br>barbe grossissant encore le volume d'une tête
+               <br></br>trop grosse pour le corps grêle et court&nbsp;; ce nez 
+               <br></br>de polichinelle surmonté de gros sourcils ombra-
+               <br></br>geant des yeux trop fendus&nbsp;; cette bouche de sot 
+               <br></br>emportant violemment le menton dans tous ses 
+               <br></br>mouvements, me faisaient l'effet d'une caricature 
+               <br></br>de médaille antique&nbsp;; mais mon ami <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a><br></br>paraît habitué à ces laideurs-là, et j'ai remarqué 
+               <br></br>que toutes les figures qui me semblaient grotes-
+               <br></br>ques avaient de l'attrait pour lui, pourvu qu'el-
+               <br></br>les eussent ce qu'il appelle de la race.</p>
+            <p><br></br>Au milieu du nombreux personnel qui encom-
+               <br></br>bre le <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Castor</a>, nous nous sommes pourtant trou-
+               <br></br>vés d'accord sur la beauté d'une femme. C'est un 
+               <br></br>personnage assez mystérieux qui a, je crois, 
+               <br></br>troublé la cervelle de moncamarade. Il veut que ce 
+               <br></br>soit une princesse grecque&nbsp;; soit. D'abord, nous l'a-
+               <br></br>vions prise pour une femme de chambre élégante, 
+               <br></br>parce qu'elle était venue, au milieu du déjeûner 
+               <br></br>chercher quelques mets qu'elle a emportés elle-
+               <br></br>même dans sa chambre&nbsp;; mais nousl'avons vue 
+               <br></br>ensuite assise sur le pont, donnant des ordres en 
+               <br></br>italien à une vraie suivante. Puis, une dame âgée<br></br>est apparue à ses côtés, celle sans doute qui était 
+               <br></br>malade, une tante ou une mère, et elles ont parlé 
+               <br></br>anglais comme si elles n'eussent fait autre chose 
+               <br></br>de leur vie.</p>
+            <p><br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a> ne persiste pas moins à croire Grec-
+               <br></br>que la belle personne qui captive son attention. 
+               <br></br>C'est, en effet, un type oriental&nbsp;: les cils sont 
+               <br></br>d'une longueur et d'une finesse inouïes&nbsp;; les yeux, 
+               <br></br>longs et doux, ont une forme tout à fait inusitée 
+               <br></br>chez nous&nbsp;; le front est élevé, avec des cheveux 
+               <br></br>plantés bas&nbsp;; la taille est d'une élégance et d'un 
+               <br></br>mouvement magnifiques&nbsp;; enfin, c'est, à coup sûr, 
+               <br></br>une des plus belles femmes, sinon la plus belle 
+               <br></br>femme que j'aie jamais vue.</p>
+            <p><br></br>— Je reprends mon bavardage après deux heu-
+               <br></br>res d'interruption. C'est un singulier être, à mon<br></br>sens, que ce <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a>. Il se prétend positive-
+               <br></br>ment amoureux, et ce que jevous racontais de 
+               <br></br>lui en plaisanterie, il faut peut-être le prendre au 
+               <br></br>sérieux maintenant. Il a causé avec saprincesse, 
+               <br></br>c'est ainsi qu'il persiste à l'appeler. Il prétend 
+               <br></br>qu'elle est romanesque, étrange, délicieuse. Elle<br></br>était revenue seule sur le pont et s'est laissé par-
+               <br></br>ler des étoiles (que l'on n'aperçoit pas), de la 
+               <br></br>phosphorescence de la mer, qui est, en effet, su-
+               <br></br>perbe en ce moment-ci&nbsp;; des merveilles de <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Rome</a>,
+               <br></br>qu'elle connaît mieux que <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a> lui-
+               <br></br>même, ce qui, selon lui, n'est pas peu dire&nbsp;: 
+               <br></br>enfin, elle va à Rome sans s'arrêter, et mon cer-
+               <br></br>veau brûlé, qui devait s'arrêter à <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Gênes</a> ne veut 
+               <br></br>plus s'arrêter nulle part. Au moment où il deve-
+               <br></br>nait trop curieux, la princesse a eu froid, et s'en 
+               <br></br>est allée rejoindre savieille parente ou samaî-
+               <br></br>tresse, car rien ne prouve encore qu'elle ne soit 
+               <br></br>pas lectrice ou dame de compagnie.</p>
+            <p><br></br>L'enthousiasme subit du jeune peintrenous<br></br>a entraînés à parier de l'amour, et ses théo-
+               <br></br>ries me semblent violentes à digérer. Comme 
+               <br></br>je montrais quelque doute à l'endroit de la 
+               <br></br>qualité de la dame, il s'est presque fâché, 
+               <br></br>assurant qu'il connaissait le monde, les femmes 
+               <br></br>particulièrement, et que celle-ci appartenait à la 
+               <br></br>plus haute aristocratie. — Soit, lui disais-je, vous<br></br>vous y connaissez certainement mieux que moi&nbsp;; 
+               <br></br>mais quand, par miracle, vous vous tromperiez, 
+               <br></br>qu'importe que votrehéroïne soit riche ou pau-
+               <br></br>vre, noble ou bourgeoise&nbsp;? Ce n'est pas de son<br></br>rang et de sa fortune que vous seriez amoureux, 
+               <br></br>j'imagine&nbsp;; ce serait d'elle-même. Le peintre ne 
+               <br></br>demande pas au cadre ce qu'il doit penser de la 
+               <br></br>peinture.</p>
+            <p><br></br>— Eh&nbsp;! Eh&nbsp;! m'a-t-il répondu, le cadre, quand il 
+               <br></br>est beau, n'est pas une vaine présomption pour 
+               <br></br>la valeur de l'image. Bien certainement, on peut 
+               <br></br>aimer une femme sans argent et sans aïeux&nbsp;; cela 
+               <br></br>m'est arrivé aussi bien qu'à vous probablement, 
+               <br></br>aussi bien qu'à tout le monde&nbsp;; mais quand une 
+               <br></br>femme intelligente et belle joint à ses charmes 
+               <br></br>l'attrait des biens et des grandeurs, elle est com-
+               <br></br>plète parce qu'elle vit dans son milieu naturel, 
+               <br></br>dans une atmosphère de poésie faite pour elle.</p>
+            <p><br></br>— Jevous accorde cela pour la vue. Il devait ê-
+               <br></br>tre beau de regarder passer <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Desdemona</a> traînant 
+               <br></br>sa robe brodée d'or et de perles sur les tapis d'O-
+               <br></br>rient du palais ducal. <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Cléopâtre</a>, couchée sur les 
+               <br></br>coussins de pourpre de sa galère, me ferait cer-
+               
+               <hr></hr><br></br>tainement ouvrir les yeux, et, si j'avais vu pareil-
+               <br></br>le chose, je passerais peut-être ma vie à m'en 
+               <br></br>souvenir&nbsp;; mais, pour souhaiter d'être l'époux de 
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Desdemona</a> ou l'amant de <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Cléopâtre</a>, je croirais 
+               <br></br>utile d'être <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Othello</a> le victorieux ou <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Antoine</a> le 
+               <br></br>magnifique. Tel que je suis, sans nom, sans ri-
+               <br></br>chesse et sans gloire, jeme tiendrais à distance 
+               <br></br>de ces divinités pour lesquelles il faut des héros, 
+               <br></br>ou de ces diablesses auxquelles il faut des mil-
+               <br></br>lions. Donc, que votrehéroïne soit une reine ou 
+               <br></br>une aventurière, regardez-vousvous-même, ou 
+               <br></br>regardez dans votre poche avant de monter sur 
+               <br></br>le piédestal d'où l'idole plongera toujours sur 
+               <br></br>vous.</p>
+            <p><br></br>— Ainsi, mon cher, reprit-il, vous raisonnez 
+               <br></br>avec l'amour&nbsp;? Vous croyez qu'il suffit de se dire&nbsp;: 
+               <br></br>«&nbsp;Je ne dois pas désirer cette femme,&nbsp;» pour n'y 
+               <br></br>plus songer&nbsp;? Ce serait bien facile&nbsp;! Ou vous êtes 
+               <br></br>singulièrement blasé, ou vous ne savez ce que 
+               <br></br>c'est qu'une passion qui vous envahit. Et d'ail-
+               <br></br>leurs, ajouta-t-il après avoir attendu vainement 
+               <br></br>ma réponse, il n'y a pas de rang et de richesse 
+               <br></br>qui tiennent&nbsp;! Non, il n'y a pas même d'intelli-
+               <br></br>gence, de fierté ou de pruderie qui défende une
+               <br></br>femme contre la volonté d'un homme. Jevous<br></br>accorde que nous voilà très laids, avec nos pale-
+               <br></br>tots et nos guêtres de voyageurs, avec nos poches 
+               <br></br>mal garnies, nos noms roturiers, nos célébrités 
+               <br></br>d'artiste dont personne encore ne se doute. Pour 
+               <br></br>arriver à faire les aimables sur un pied d'égalité 
+               <br></br>avec des <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Cléopâtre</a> ou des <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Desdemona</a>, il nous faudrait
+               <br></br>d'autres habits, d'autres séductions, d'au-
+               <br></br>tres museaux, peut-être, car je vois bien que c'est 
+               <br></br>notre état ou notre apparence d'inégalité qui vous<br></br>choque&nbsp;; mais c'est trop de modestie… ou trop 
+               <br></br>d'orgueil&nbsp;! Je me moque de tout ça, moi. Je vaux 
+               <br></br>ce que je vaux, et si je parviens à me faire aimer 
+               <br></br>jamais d'une merveille de beauté, de luxe et d'es-
+               <br></br>prit, je me dirai que je le méritais et qu'elle ne 
+               <br></br>pouvait pas faire un meilleur choix, puisque avec 
+               <br></br>rien j'ai su conquérir celle qui avait tout. J'y ai
+               <br></br>souvent pensé&nbsp;; j'ai frisé de grandes aventures, et 
+               <br></br>vous verrez que j'en attraperai une belle, un jour 
+               <br></br>ou l'autre. Ces choses-là arrivent toujours à qui 
+               <br></br>s'y croit destiné, jamais à qui doute de soi-même.</p>
+            <p><br></br>Là-dessus, nous nous sommes souhaité le bon-
+               <br></br>soir, et, enveloppé de son manteau râpé, le bon 
+               <br></br>jeune homme s'est endormi sur un banc, dans sa<br></br>confiance et dans son bonheur, dans sa raison 
+               <br></br>peut-être&nbsp;! Ce qui me choque et m'étourdit dans 
+               <br></br>cette estime de soi que rien ne justifie, c'est 
+               <br></br>peut-être là, tout de bon, le moyen grossier, mais 
+               <br></br>toujours sûr, de réaliser ses rêves. Mais où dia-
+               <br></br>ble va-t-on chercher de pareils rêves ?</p>
+            <p class="text-center">VI.</p>
+            <p class="text-end">
+               Passé Gênes,
+               16 mars, onze heures du soir.</p>
+            <p><br></br>Toujours à bord du <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Castor</a>&nbsp;! Mais j'ai passé une 
+               <br></br>magnifique journée. Ce matin, je me suis éveillé 
+               <br></br>à six heures, après avoir un peu dormi, bien mal-
+               <br></br>gré moi, car c'est un vrai plaisir, pour qui n'en a 
+               <br></br>pas l'habitude, d'entendre, de voir et de sentir le 
+               <br></br>flot, même dans les ténèbres. Je dis voir, parce 
+               <br></br>que les sillages phosphorescens dessinent mille 
+               <br></br>arabesques changeantes autour des flancs du na-
+               <br></br>vire. On s'hébête à regarder cela&nbsp;; il me semble 
+               <br></br>que je ne m'en lasserais jamais.</p>
+            <p><br></br>Je m'étais assoupi ayant froid, je me suis éveil-
+               <br></br>lé ayant chaud. Le soleil brillait déjà, le soleil 
+               <br></br>d'<a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Italie</a>&nbsp;! C'est lui que j'ai salué le premier, et en-
+               <br></br>suite j'ai été libre de saluer le gigante. Vous con-
+               <br></br>naissez par les gravures et par le daguerréotype 
+               <br></br>cette riante entrée du <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">port de Gênes</a>, cette colon-
+               <br></br>nade des jardins du <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">palais Doria</a>, et cette statue 
+               <br></br>colossale (qui n'est pas celle d'André), qui, de la
+               <br></br>colline où elle se tient depuis si longtemps sur ses 
+               <br></br>grosses jambes, semble, d'un air bonhomme, vous 
+               <br></br>souhaiter la bienvenue. Jevous ferai donc grâce 
+               <br></br>de cette description. Le premier aspect de la ville a, 
+               <br></br>vous le savez, plus d'étrangeté que 
+               <br></br>de beauté&nbsp;; mais c'est une étrangeté souriante&nbsp;; 
+               <br></br>et, ici, le moyen-âge n'a rien laissé d'imposant, 
+               <br></br>rien de lugubre non plus.</p>
+            <p><br></br>On vous fait attendre le débarquement pendant 
+               <br></br>deux mortelles heures, et ensuite, pour vous per-
+               <br></br>mettre de passer une journée sur le <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">territoire 
+                  <br></br>sarde</a>, on vous rançonne sous prétexte de visa, 
+               <br></br>sans compter le temps qu'on vous prend encore 
+               <br></br>à vous faire attendre le bon plaisir de la police et 
+               <br></br>des ambassades. L'accueil n'a rien d'hospitalier, 
+               <br></br>jevous jure, pour les pauvres diables. Enfin, il 
+               <br></br>m'a été possible de pénétrer dans la ville et d'y 
+               <br></br>chercher, à tout hasard, un coin pour déjeûner. 
+               <br></br>Mon camarade <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a> n'avait pas voulu débar-
+               <br></br>quer, saprincesse grecque ne débarquant pas. 
+               <br></br>Jel'ai donc laissé tout le jour sur le <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Castor</a>, oc-
+               <br></br>cupé à tâcher de renouer la conversation avec 
+               <br></br>l'objet de ses pensées et à tirer les vers du nez à 
+               <br></br>ses domestiques. Et puis, il est un peu comme le 
+               <br></br>harpiste, il méprise <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Gênes</a>, il méprise tout ce qui 
+               <br></br>n'est pas <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Rome</a> et les <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Sept-Collines</a>.</p>
+            <p><br></br>Le hasard m'a conduit devant la porte du café 
+               <br></br>de la <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Concordia</a>. La vue du petit jardinm'a tenté. 
+               <br></br>Je me suis fait servir le café sous des orangers, 
+               <br></br>de véritables orangers couverts d'oranges, au
+               <br></br>milieu de platebandes fleuries auxquelles le so-
+               <br></br>leil donnait des tons resplendissans. Mais ne sou-
+               <br></br>pirez pas trop. Le climat de cette région est si-
+               <br></br>non aussi froid, du moins aussi variable que 
+               <br></br>le nôtre. Nos déplorables printemps de ces derniè-
+               <br></br>res années ont eu ici leur contrecoup, et j'enten-
+               <br></br>dais dire autour de moi que cette belle journée 
+               <br></br>était la première de l'année. J'en ai remercié le 
+               <br></br>ciel, qui m'a permis de voir ainsi l'ancienne rei-
+               <br></br>ne de la <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Méditerranée</a> dans toute sa splendeur.</p>
+            <p><br></br>En tant que cité commerçante, progressive et ci-
+               <br></br>vilisée, elle est bien détrônée aujourd'hui par 
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Marseille</a>&nbsp;; mais comme arrangement et distribution pit-
+               <br></br>toresque, il y a la différence d'une belle aventuriè-
+               <br></br>re à une belle bourgeoise. La première, un peu 
+               <br></br>follement accoutrée et mêlant des ornements ex-
+               <br></br>quis à des parures risquées, mais ayant ces grâ-
+               <br></br>ces qui entraînent ou ces originalités qui plai-
+               <br></br>sent&nbsp;; l'autre plus sage, plus soumise à la mode, 
+               <br></br>décente, riche, propre, mais ressemblant à tout 
+               <br></br>le monde.</p>
+            <p><br></br>En somme, l'aspect général de <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Gênes</a> n'est pas 
+               <br></br>satisfaisant, mais le détail est souvent adorable. 
+               <br></br>Les maisons peintes sont décidément une laide 
+               <br></br>chose&nbsp;; heureusement la mode s'en perd. La ville,
+               <br></br>jetée sur des plans inégaux, n'a ni queue ni tête, 
+               <br></br>mais les belles rues sont curieuses et amusantes. 
+               <br></br>On appelle ici les belles rues celles qui sont 
+               <br></br>bordées de beaux palais&nbsp;; par malheur, elles sont 
+               <br></br>si étroites que ces beaux palais y sont enfouis. 
+               <br></br>On passe en admirant les portes et les dessous 
+               <br></br>de la construction, mais il faut se tordre le cou 
+               <br></br>pour voir l'édifice, et encore ne se fait-on, quel-
+               <br></br>que part qu'on se mette, qu'une idée vague 
+               <br></br>de ses proportions et de son élégance.</p>
+            <p><br></br>Il faudrait consacrer une journée à chacune de 
+               <br></br>ces demeures d'un style varié au dedans comme 
+               <br></br>au dehors. Cette variété étonne, éblouit, amuse 
+               <br></br>et fatigue. Il y a beaucoup de marbres, beaucoup
+               <br></br>de fresques, beaucoup de dorures, et tout cela a 
+               <br></br>coûté beaucoup d'argent. C'est petit et mignon à 
+               <br></br>l'extérieur. Au dedans les salles sont vastes, et 
+               <br></br>l'on s'étonne qu'elles tiennent dans des palais qui 
+               <br></br>semblent tenir eux-mêmes si peu de place. Plus 
+               <br></br>loin, il y a de belles promenades bordées de vi-
+               <br></br>laines petites maisons&nbsp;; des églises riches et en-
+               <br></br>combrées de choses précieuses et coûteuses&nbsp;; et 
+               <br></br>puis des sentiers à pic, bordés de hautes maisons 
+               <br></br>très laides, des passages noirs qui s'ouvrent tout à 
+               <br></br>coup sur des verdures éblouissantes&nbsp;; puis, le roc 
+               <br></br>à pic devant et derrière soi&nbsp;; puis, la mer vue d'en 
+               <br></br>haut et toujours belle&nbsp;; des fortifications gigan-
+               <br></br>tesques, interminables&nbsp;; des jardins sur les toits&nbsp;; 
+               <br></br>des villas jetées au hasard sur les collines envi-
+               <br></br>ronnantes, profusion de bâtisses criardes, qui, 
+               <br></br>vues de loin, gâtent le cadre naturel de la ville&nbsp;; 
+               <br></br>enfin, c'est incohérent&nbsp;: ce n'est pas une cité, 
+               <br></br>c'est un amas de nids que toutes sortes d'oiseaux 
+               <br></br>sont venus construire là, chacun faisant à sa tête 
+               <br></br>et s'emparant de la place et des matériaux qui lui 
+               <br></br>plaisaient. Si on ne se disait pas que c'est l'<a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Italie</a>,
+               <br></br>on se persuaderait volontiers que ce n'est pas 
+               <br></br>ce que l'on attendait&nbsp;; mais il faut ne point
+               <br></br>penser à cela, et plutôt se livrer à cette influence 
+               <br></br>de désordre et de caprice qui rend un peu fou à 
+               <br></br>première vue.</p>
+            <p><br></br>Après avoir couru deux ou trois heures, tantôt 
+               <br></br>choqué, tantôt ravi, je suis entré dans quelques 
+               <br></br>palais. Ah&nbsp;!mon ami, que j'ai vu de beaux 
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">VanDicks</a> et de beaux <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Véronèses</a>&nbsp;! Mais les étranges 
+               <br></br>intérieurs que ceux de ces nobles Génois&nbsp;! Quels 
+               <br></br>drôles de petits détails attestant l'incurie ou l'ab-
+               <br></br>sence du goût&nbsp;! quelles croûtes de portraits mo-
+               <br></br>dernes, quels mesquins petits meubles&nbsp;! quelles 
+               <br></br>plaisantes acquisitions de la veille au milieu de 
+               <br></br>ces chefs-d’œuvre, de ces décorations splendides 
+               <br></br>et de ces raretés rapportées par les ancêtres 
+               <br></br>voyageurs ou trafiquants éclairés&nbsp;! Comme la pe- 
+               <br></br>tite faïence anglaise jure à côté de la monumen-
+               <br></br>tale potiche de Chine, et comme nos colifichets 
+               <br></br>d'industrie française à bon marché d'il y a dix 
+               <br></br>ans sont étonnés de se trouver mêlés à ces vieux 
+               <br></br>marbres et à ces fières peintures&nbsp;!</p>
+            <p><br></br>Il semble que les descendants des illustrissimes 
+               <br></br>navigateurs aient pris en dégoût tout ce luxe de 
+               <br></br>pirates, ou que la lassitude du cérémonial ait ga-
+               <br></br>gné les têtes, comme celle de monAnglais de la 
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Réserve</a>. Peut-être ont-ils perdu quelque chose de 
+               <br></br>plus que le goût de la magnificence, le goût du 
+               <br></br>beau. On va jusqu'à dire que, dans certains pa-
+               <br></br>lais, des toiles de grands maîtres ont été vendues 
+               <br></br>aux étrangers par des gardiens infidèles, rempla-
+               <br></br>cées par des copies médiocres, et que les proprié-
+               <br></br>taires ne s'en sont pas encore aperçu.</p>
+            <p><br></br>Je ne vous affirme nullement le fait&nbsp;; mais, pour 
+               <br></br>vous résumer mon impression générale, jevous<br></br>dirai qu'ici tout est surprise charmante ou brus-
+               <br></br>que déception. Si j'eusse été en humeur de tra-
+               <br></br>vailler, le pittoresque m'eût pourtant retenu&nbsp;; il 
+               
+               <hr></hr><br></br>est à chaque pas, dans une ville aussi raboteuse&nbsp;; 
+               <br></br>il faudrait s'arrêter devant toutes ces ruelles qui 
+               <br></br>se tordent et se précipitent d'un plan à l'autre, 
+               <br></br>passant sous des arcades multipliées qui relient 
+               <br></br>les maisons entre elles et projettent, sur ces pro-
+               <br></br>fondeurs brillantes, des ombres d'un velouté et 
+               <br></br>d'une transparence inouïs. Oh&nbsp;! s'il ne s'agissait 
+               <br></br>que de peinture, la vie tout entière d'un artiste 
+               <br></br>minutieux pourrait bien se consumer devant une 
+               <br></br>de ces ruelles à perspective mouvementée&nbsp;! Mais 
+               <br></br>il s'agit d'autre chose&nbsp;; il s'agit d'avancer, de com-
+               <br></br>prendre, de vivre si faire se peut&nbsp;! </p>
+            <p><br></br>Pendant que j'avalais <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Gênes</a> des yeux, des jam-
+               <br></br>bes et de l'esprit, mons <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a> poursuivait 
+               <br></br>sadéesse. Mais voilà où recommence l'aventure, 
+               <br></br>qui, j'espère, va vous faire oublier l'informe es-
+               <br></br>quisse que je viens de mettre sous vos yeux.</p>
+            <p><br></br>Quand, à huit heures du soir, je suis remonté, 
+               <br></br>affamé et harassé, sur le <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Castor</a>, j'ai trouvé le 
+               <br></br>pont tellement encombré de beau monde, qu'on 
+               <br></br>eût dit d'une fête. Ce bruit et cette foule venaient 
+               <br></br>d'un notable surcroît de passagers à bord&nbsp;; des 
+               <br></br>Anglais, toujours des Anglais, et puis, quelques 
+               <br></br>Français et quelques indigènes, ces derniers 
+               <br></br>ayant amené là toute leur famille et tous leurs a-
+               <br></br>mis, qui, en manière d'adieux, causaient gaîment 
+               <br></br>avec eux, en attendant le moment de lever l'ancre.</p>
+            <p><br></br>Au milieu de cette bagarre, que rendaient plus 
+               <br></br>étourdissante les chanteurs et guitaristes ambu-
+               <br></br>lants postés dans des barques autour du <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Castor</a>, et 
+               <br></br>tendant leurs casquettes aux <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">passagers</a>, j'eus le 
+               <br></br>temps de remarquer, encore une fois, que le Gé-
+               <br></br>nois était expansif, babillard, enjoué, commère 
+               <br></br>et avenant. Cela était, du moins, écrit sur toutes 
+               <br></br>les figures et dans toutes les intonations de ceux 
+               <br></br>qui parlaient le patois. Les prêtres surtout me<br></br>parurent gais et sémillants, ressemblant fort peu, 
+               <br></br>dans leurs allures, à ceux de France. On voit 
+               <br></br>qu'ils sont mêlés plus que les nôtres à la société 
+               <br></br>locale et à ses préoccupations temporelles. Pour-
+               <br></br>tant, l'opinion générale est ici en grande réaction 
+               <br></br>contre eux, à ce que l'on m'a dit.</p>
+            <p><br></br>Enfin, le son de la cloche nous délivra de tous 
+               <br></br>les visiteurs, qui s'envolèrent sur leurs barques, 
+               <br></br>envoyant de gais adieux et de bons souhaits à 
+               <br></br>l'<a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">équipage</a>, et quand l'ordre eut un peu agrandi 
+               <br></br>l'espace, je pus chercher et retrouver mon ami 
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a>, tandis que le steamer se remettait en 
+               <br></br>marche.</p>
+            <p><br></br>— J'ai passé une sotte journée, me dit-il&nbsp;; ma<br></br>princesse a dormi tout le temps dans sacabine, 
+               <br></br>d'où elle est enfin sortie, parfumée et coiffée à 
+               <br></br>ravir, il n'y a pas plus d'une heure. J'ai réussi à 
+               <br></br>l'accoster&nbsp;; mais sa chère tante, n'ayant plus le 
+               <br></br>mal de mer, est venue mel'enlever&nbsp;: vous pouvez 
+               <br></br>les voir là-bas qui se moquent de nous&nbsp;!</p>
+            <p><br></br>Je regardai la tante, qui m'avait paru vieille, 
+               <br></br>hier, mais qui, débarrassée de ses coiffes et de 
+               <br></br>l'affreux abat-jour vert que les Anglaises mettent 
+               <br></br>maintenant en voyage autour de la passe de leurs 
+               <br></br>chapeaux, est une assez jolie femme grasse, sur 
+               <br></br>le retour. La princesse avait, en effet, arrangé ses<br></br>magnifiques cheveux bruns d'une façon très ar-
+               <br></br>tiste et daignait nous les laisser admirer, en te-
+               <br></br>nant à la main son petit chapeau de paille à ru-
+               <br></br>bans de velours vert. Du reste, cesdeux dames<br></br>ne me paraissaient faire aucune attention à nous.</p>
+            <p><br></br>— Et, maintenant, dis-je à <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a>, puisque 
+               <br></br>vous étiez si intrigué, vous savez du moins qui 
+               <br></br>elles sont&nbsp;? vous avez eu le temps de vous en en-
+               <br></br>quérir ?</p>
+            <p><br></br>— La tante est une Anglaise pur sang, répon-
+               <br></br>dit-il. La nièce n'est peut-être pas sa nièce. Voilà 
+               <br></br>tout ce que je sais. Leurs bagages sont au fond 
+               <br></br>de la cale&nbsp;; pas un nom, des chiffres tout au plus, 
+               <br></br>sur leurs nécessaires de voyage. Le domestique<br></br>ne sait pas un mot de français, et je ne sais pas 
+               <br></br>un mot d'anglais&nbsp;! Quant à la soubrette italienne, 
+               <br></br>elle est malade à mourir, à ce que prétend 
+               <br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Benvenuto</a>.</p>
+            <p><br></br>— Qui ça, <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Benvenuto</a>&nbsp;?</p>
+            <p><br></br>—Votreharpiste&nbsp;! il s'appelle <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Benvenuto</a>, l'ani-
+               <br></br>mal&nbsp;! J'espérais qu'il me serait utile. Il avait flairé 
+               <br></br>ma préoccupation sentimentale, et, venant au-
+               <br></br>devant de mes désirs, il se mettait au service de 
+               <br></br>ma passion avec cette inimitable courtoisie et 
+               <br></br>cette délicieuse pénétration qui caractérisent 
+               <br></br>certaine classe d'hommes très employés et très
+               <br></br>répandus en <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Italie</a>… sur les <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Sept-Collines</a>, parti-
+               <br></br>culièrement&nbsp;; mais je soupçonne le drôle d'avoir 
+               <br></br>bu mabonne-main et de ronfler sous quelque 
+               <br></br>malle. Bref, je ne sais rien du tout, sinon que 
+               <br></br>l'on va à <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Rome</a>, ce qui laisse mon espérance in-
+               <br></br>tacte. Si cette diable de mer que voilà coulante
+               <br></br>comme de l'huile pouvait se courroucer un peu, 
+               <br></br>j'espérerais que la tante retournerait vite à ses<br></br>oreillers… Mais qu'est-ce que vous avez, mon 
+               <br></br>cher&nbsp;? et à qui est-ce que je parle&nbsp;?</p>
+            <p><br></br>— A quelqu'un qui vous écoute d'une oreille, 
+               <br></br>mais qui, de l'autre, reconnaît une voix… Tenez, 
+               <br></br>mon cher, cettedame qui emmène votreprin-
+               <br></br>cesse en <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Italie</a> est bien satante, c'est mylady 
+               <br></br>trois étoiles. Je ne connais que son nom de bap-
+               <br></br>tême, <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Harryet</a>&nbsp;; mais je sais qu'elle a épousé par 
+               <br></br>amour un cadet de famille qui s'est laissé enri-
+               <br></br>chir de huit cent milles livres de rentes, un très
+               <br></br>bon et très honnête homme, pas gai tous les jours&nbsp;; 
+               <br></br>mais ceci ne fait rien à l'affaire. Votrehéroïne est 
+               <br></br>bien réellement une personne de grande maison, 
+               <br></br>et peut-être l'héritière future de cette grande 
+               <br></br>fortune, car mylord et mylady n'ont pas d'enfans.</p>
+            <p><br></br>— Zadig&nbsp;! s'écria <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a> transporté de joie, 
+               <br></br>où diable avez-vous appris tout cela&nbsp;?</p>
+            <p><br></br>— Vous voyez bien, repris-je, en lui montrant 
+               <br></br>un Anglais chauve, à pantalon grillagé, qui s'était 
+               <br></br>approché assez respectueusement des deux fem-
+               <br></br>mes, que voilà mylord qui parle à safemme&nbsp;!</p>
+            <p><br></br>— Çà&nbsp;? c'est le domestique&nbsp;!</p>
+            <p><br></br>— Jevous jure que non&nbsp;; et s'il n'a pas voulu
+               <br></br>vous répondre, c'est que vous ne lui êtes pas 
+               <br></br>présenté, et que, devant mylady, il ne veut pas 
+               <br></br>paraître ce qu'il est, un homme sans morgue et 
+               <br></br>parlant le français aussi facilement que vous et 
+               <br></br>moi.</p>
+            <p><br></br>— Encore une fois, Zadig, expliquez-vous&nbsp;!</p>
+            <p><br></br>Je refusai de m'expliquer, autant pour me di-
+               <br></br>vertir de l'étonnement de moncamarade, que 
+               <br></br>pour obéir à un sentiment, peut-être exagéré, de 
+               <br></br>délicatesse. J'avais surpris les secrets du ména-
+               <br></br>ge de lord trois étoiles, en écoutant, avec une at-
+               <br></br>tention dont je pouvais bien me dispenser, ses<br></br>confidences à un ami, à travers une cloison du 
+               <br></br>cabaret de la <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Réserve</a>. Je crois que je devais 
+               <br></br>m'en tenir là, et ne pas les divulguer.</p>
+            <p><br></br>Maintenant, mon ami, vous allez aussi me trai-
+               <br></br>ter de Zadig et me demander comment je recon-
+               <br></br>naissais un homme dont je n'avais pas aperçu la 
+               <br></br>figure. Jevous répondrai que d'abord sa voix, sa<br></br>prononciation, ses intonations tristes et comiques
+               <br></br>à la fois, m'étaient restées dans l'oreille d'une fa- 
+               <br></br>çon toute particulière. Si je voulais me faire va-
+               <br></br>loir comme devin, j'ajouterais qu'il est certains traits, 
+               <br></br>certaines physionomies et certaines tournu-
+               <br></br>res qui s'adaptent si parfaitement à certaines ma-
+               <br></br>nières de s'exprimer, et à certaines révélations de 
+               <br></br>caractère et de situation, qu'il n'y a pas moyen de 
+               <br></br>les méconnaître. Mais, pour rester dans l'exacte vé-
+               <br></br>rité, je dois vous avouer qu'au moment où je quit-
+               <br></br>tais le cabaret de la <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Réserve</a>, je m'étais trouvé 
+               <br></br>face à face sur l'escalier extérieur avec les deux 
+               <br></br>personnages, au moment où un garçon leur pré-
+               <br></br>sentait sa lanterne pour allumer leurs cigares. 
+               <br></br>L'unme parut un <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">officier de marine</a>&nbsp;; l'autre, c'é-
+               <br></br>tait l'homme à front chauve, à casquette vernie 
+               <br></br>renversée en arrière, à pantalon grillagé, que je<br></br>voyais en ce moment échanger quelques paroles 
+               <br></br>avec mylady. Leur conversation ne fut pas lon-
+               <br></br>gue. Je ne l'entendis pas&nbsp;; mais, à coup sûr, je la 
+               <br></br>traduirais ainsi&nbsp;: «&nbsp;Vous avez fumé&nbsp;?— Jevous<br></br>jure que non.— Jevous jure que si.&nbsp;» Et mylord<br></br>s'éloigna d'un air résigné, siflotta un moment, 
+               <br></br>en regardant les étoiles, et s'en alla fumer der-
+               <br></br>rière la cheminée de la chaudière. Il n'y eût 
+               <br></br>peut-être pas songé, mais safemme venait de lui<br></br>en donner l'envie.</p>
+            <p><br></br><a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Brumières</a>, enchanté de mes découvertes, vient 
+               <br></br>de voir un autre de ses souhaits exaucés&nbsp;: le 
+               <br></br>temps s'est brouillé, la mer s'est fait sentir plus 
+               <br></br>rude.<a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/pers_index.html">Lady Harryet</a> a quitté le pont. La nièce, 
+               <br></br>qui paraît d'une solidité à toute épreuve, est res- 
+               <br></br>tée sur le banc avec la femme de chambre, et j'ai 
+               <br></br>laissé moncamarade tournant autour d'elles. Je<br></br>vous écris du salon où, en ce moment, je vois 
+               <br></br>apparaître mylord trois étoiles avec un très vilain 
+               <br></br>chien jaunâtre que jele soupçonne d'avoir acheté 
+               <br></br>à <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Gênes</a> pour se faire renvoyer plus souvent par 
+               <br></br>safemme. Ils se font mutuellement (mylord et son<br></br>chien) de grandes amitiés. Pauvre lord, trois étoi-<br></br>les&nbsp;! Il sera peut-être aimé, au moins, de ce chien-
+               <br></br>là&nbsp;! Mais le roulis augmente et il me devient diffi-
+               <br></br>cile d'écrire. La nuit se fait maussade en plein 
+               <br></br>air, et je vais me reposer des rues perpendiculai-
+               <br></br>res et du terrible pavé de briques de <a href="file:/home/fanny/Documents/M2-TNAH/ENC2419-XSLT/devoir_xslt/html/place_index.html">Gênes</a> la
+               <br></br>superbe.</p>
+            <p class="text-end text-uppercase">George Sand.</p>
+            <p>(La suite à demain.)</p>
+         </div>
+      </div>
+      <footer class="bg-light text-center text-lg-start">
+         <div class="text-center p-3 text-white" style="background-color: #6495ED; font-size: 18px">
+            <p>Fanny Lebreton - 2022</p>
+         </div>
+      </footer>
+   </body>
+</html>
