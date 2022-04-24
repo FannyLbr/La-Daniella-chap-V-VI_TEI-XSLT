@@ -221,7 +221,7 @@
                                     <ul>
                                         <li>les relations entre les personnages,</li> 
                                         <li>la fiche descriptive des personnages,</li> 
-                                        <li>la fiche descriptive des lieux,</li> 
+                                        <li>la fiche descriptive des lieux.</li> 
                                     </ul>
                                 </li>
                             </ul>
@@ -1105,7 +1105,7 @@
                     </xsl:choose>
                    
                    <xsl:call-template name="contextualisation"/>
-                    <xsl:call-template name="mention_chapitre_lieu"/>
+                   <xsl:call-template name="mention_chapitre_lieu"/>
             <xsl:call-template name="desc_lieu"/>
                 </dl>                
             </li>         
