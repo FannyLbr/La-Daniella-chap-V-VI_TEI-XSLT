@@ -875,10 +875,9 @@
             <!-- Condition permettant d'afficher le chapitre dans lequel apparaît le personnage en question, certains personnages n'étant mentionnés que dans des 'rs', c'est pour cela que nous créeons 
                         une condition afin d'appliquer la règle à la fois sur les 'persName' et sur les 'rs' -->
             <xsl:choose>
-                <xsl:when test="ancestor::TEI//body/div//persName[@ref = concat('#', $person_id)]">
+                <xsl:when test="ancestor::TEI//body/div//persName[replace(@ref, '#','')=$person_id]">
                     <b>Mention : </b>
-                    <!-- On itère sur les 'persName'et on les grou-->
-                    <xsl:for-each-group select="ancestor::TEI//body/div//persName[@ref = concat('#', $person_id)]" group-by="ancestor::div[1]">
+                    <xsl:for-each-group select="ancestor::TEI//body//persName[replace(@ref, '#','')=$person_id]" group-by="ancestor::div[1]">
                         <xsl:value-of select="concat(ancestor::div[1]/@type, ' ', ancestor::div[1]/@n, '  ')"/>
                     </xsl:for-each-group>
                     <br/>
@@ -886,7 +885,7 @@
             
                 <xsl:otherwise>
                     <b>Mention : </b>
-                    <xsl:for-each-group select="ancestor::TEI//body/div//rs[@ref = concat('#', $person_id)]" group-by="ancestor::div[1]">
+                    <xsl:for-each-group select="ancestor::TEI//body//rs[@type='person'][replace(@ref, '#','')=$person_id]" group-by="ancestor::div[1]">
                         <xsl:value-of select="concat(ancestor::div[1]/@type, ' ', ancestor::div[1]/@n, '  ')"/>
                     </xsl:for-each-group>
                 </xsl:otherwise>
@@ -904,16 +903,16 @@
         
         <dd> 
             <xsl:choose>
-                <xsl:when test="ancestor::TEI//body/div//placeName[@ref = concat('#', $place_id)]">
+                <xsl:when test="ancestor::TEI//body/div//placeName[replace(@ref, '#','')=$place_id]">
                     <b>Mention : </b>
-                    <xsl:for-each-group select="ancestor::TEI//body/div//placeName[@ref = concat('#', $place_id)]" group-by="ancestor::div[1]">
+                    <xsl:for-each-group select="ancestor::TEI//body//placeName[replace(@ref, '#','')=$place_id]" group-by="ancestor::div[1]">
                         <xsl:value-of select="concat(ancestor::div[1]/@type, ' ', ancestor::div[1]/@n, '  ')"/>
                     </xsl:for-each-group>
                     <br/>
                 </xsl:when>
                 
                 <xsl:otherwise>
-                    <xsl:for-each-group select="ancestor::TEI//body/div//rs[@ref = concat('#', $place_id)]" group-by="ancestor::div[1]">
+                    <xsl:for-each-group select="ancestor::TEI//body//rs[@type='place'][replace(@ref, '#','')=$place_id]" group-by="ancestor::div[1]">
                         <b>Mention : </b> <xsl:value-of select="concat(ancestor::div[1]/@type, ' ', ancestor::div[1]/@n, '  ')"/>
                     </xsl:for-each-group>
                     <br/>
